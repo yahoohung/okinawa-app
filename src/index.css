@@ -29,7 +29,7 @@ html {
   --radius-xl: 48px;
   --blur-amount: blur(40px);
   --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  --section-padding: clamp(80px, 15vh, 160px);
+  --section-padding: clamp(100px, 20vh, 240px);
   --card-padding: clamp(24px, 5vw, 48px);
   --accent-gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
 }
@@ -212,12 +212,12 @@ body {
 }
 
 .section-title {
-  font-size: clamp(32px, 8vw, 56px);
-  line-height: 1.08;
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  margin-bottom: 24px;
-  color: var(--text-main);
+  font-size: clamp(40px, 10vw, 84px);
+  font-weight: 800;
+  color: var(--primary-dark);
+  line-height: 1.05;
+  margin-bottom: 80px;
+  letter-spacing: -0.05em;
 }
 
 @media (max-width: 768px) {}
@@ -344,10 +344,11 @@ body {
 .day-title-massive {
   font-size: clamp(32px, 10vw, 48px);
   font-weight: 600;
-  letter-spacing: -0.003em;
+  letter-spacing: -0.03em;
   color: var(--primary);
-  line-height: 1.1;
+  line-height: 1.0;
   margin-bottom: 24px;
+  opacity: 0.15;
 }
 
 /* Photo Highlight */

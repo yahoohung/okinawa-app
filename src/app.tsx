@@ -136,7 +136,7 @@ export function App() {
         {/* Overview Intro Section */}
         <section id="overview" class="section reveal">
           <div class="text-center">
-            <h2 class="section-title">極致的放鬆。<br />前所未見的享受。</h2>
+            <h2 class="section-title" style="font-size: clamp(40px, 10vw, 80px); line-height: 1.05; letter-spacing: -0.03em;">極致，放鬆。<br />2026，沖繩。</h2>
             <p class="section-body text-center" style="margin-bottom: 0;">
               我們將 8 天 7 夜的旅程，打磨至完美。從那霸街頭的繁華，到北部深海的靜謐。一切為全家人量身定做。這，就是極致的假期體驗。
             </p>
@@ -154,15 +154,9 @@ export function App() {
               <img src={tokyuImg} alt="Tokyu Stay Naha" class="card-bg" />
               <div class="large-number-bg">01</div>
               <div class="accommodation-overlay">
-                <div style="margin-bottom: 16px;">
-                  <span class="glass-chip">那霸市中心</span>
-                </div>
-                <h3 style="font-size: clamp(22px, 3.5vw, 28px); font-weight:700; color:#fff; line-height:1.2; margin-bottom:12px;">
+                <h3 style="font-size: clamp(24px, 4vw, 32px); font-weight:700; color:#fff; line-height:1.1; margin-bottom: 0;">
                   東急 Stay 那霸。
                 </h3>
-                <p style="font-size: 14px; color:rgba(255,255,255,0.6); max-width: 200px;">
-                  與國際通近在咫尺。為你的沖繩之行開啟最完美的都市篇章。
-                </p>
               </div>
             </div>
 
@@ -171,17 +165,9 @@ export function App() {
               <img src={villaImg} alt="Reflexion Villas GLANZ" class="card-bg" />
               <div class="large-number-bg">02</div>
               <div class="accommodation-overlay">
-                <div style="margin-bottom: 16px; display: flex; gap: 8px;">
-                  <span class="glass-chip">名護市</span>
-                  <span class="glass-chip">Luxury Villa</span>
-                </div>
-                <h3 style="font-size: clamp(28px, 5vw, 42px); font-weight:700; color:#fff; line-height:1.1; margin-bottom:12px;">
+                <h3 style="font-size: clamp(28px, 5vw, 42px); font-weight:700; color:#fff; line-height:1.1; margin-bottom:0;">
                   琉池名護奢華別墅。
                 </h3>
-                <p style="font-size: 16px; color:rgba(255,255,255,0.7); font-weight:500; letter-spacing:0.02em; margin-bottom:16px;">Reflexion Villas GLANZ</p>
-                <p style="font-size: 14px; color:rgba(255,255,255,0.5); line-height:1.5; max-width:440px;">
-                  這不只是住宿，而是在沖繩北部的私密領地。無邊際泳池與森林環繞，享受絕對的寧靜。
-                </p>
               </div>
             </div>
 
@@ -192,15 +178,8 @@ export function App() {
               </div>
               <div class="split-content">
                 <div class="large-number-bg" style="top: auto; bottom: -20px;">03</div>
-                <div style="margin-bottom: 24px;">
-                  <span class="glass-chip" style="background:rgba(41, 151, 255, 0.2); border-color:rgba(41, 151, 255, 0.3);">核心據點</span>
-                  <span class="glass-chip">連續 5 晚</span>
-                </div>
-                <h3 style="font-size: clamp(28px, 5vw, 40px); font-weight:700; color:var(--text-main); line-height:1.1; margin-bottom:16px;">恩納村<br />可可尼之殿。
+                <h3 style="font-size: clamp(28px, 5vw, 40px); font-weight:700; color:var(--text-main); line-height:1.1; margin-bottom:0;">恩納村<br />可可尼之殿。
                 </h3>
-                <p style="font-size: 16px; color:var(--text-secondary); line-height:1.6; margin-bottom:32px; max-width:350px;">
-                  Kokoni Chill House。位於沖繩正中央的家。避免搬遷的疲憊，讓旅行回歸放鬆本質。
-                </p>
                 <div style="border-top:1px solid var(--border-color); padding-top:24px; font-size:12px; color:var(--text-tertiary); font-weight:700; letter-spacing:0.1em;">
                   FAMILY BASE · COMFORT STAY
                 </div>
@@ -222,12 +201,10 @@ export function App() {
 
               <div class="vehicle-specs">
                 <div class="spec-item">
-                  <div class="spec-label">安全科技</div>
-                  <div class="spec-value">主動安全系統<br />全速域跟車</div>
+                  <div class="spec-value" style="font-size: 32px; font-weight: 700;">Safety 3.0</div>
                 </div>
                 <div class="spec-item">
-                  <div class="spec-label">舒適空間</div>
-                  <div class="spec-value">雙電動滑門<br />進出無礙</div>
+                  <div class="spec-value" style="font-size: 32px; font-weight: 700;">Hybrid Power</div>
                 </div>
               </div>
             </div>
@@ -243,8 +220,8 @@ export function App() {
         {/* Itinerary Header Section */}
         <section id="itinerary" class="section reveal">
           <div class="text-center">
-            <h2 class="section-title" style="margin-bottom: 0;">
-              8 天 7 夜。<br />每一天，都是最高傑作。
+            <h2 class="section-title" style="font-size: clamp(40px, 8vw, 72px); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 0;">
+              8 天 7 夜。<br />最高傑作。
             </h2>
           </div>
         </section>
@@ -257,9 +234,8 @@ export function App() {
             return (
               <div class="timeline-item" key={day.day}>
                 <div class="day-header reveal">
-                  <div class="day-intensity">
-                    {day.date}
-                    <span class={`intensity-badge ${day.intensity}`}>{day.intensity}</span>
+                  <div class="day-intensity" style="font-size: clamp(40px, 10vw, 80px); font-weight: 800; line-height: 1; letter-spacing: -0.04em;">
+                    DAY {day.day}.
                   </div>
                   <div class="day-title-massive">DAY {day.day}.</div>
                 </div>
@@ -344,12 +320,21 @@ export function App() {
         </div>
         {/* End of content */}
         {/* End of Timeline */}
-      </main>
 
-      <footer style="text-align:center; padding: 120px 0; color:var(--text-tertiary); font-size:12px; border-top: 1px solid var(--border-color); margin-top:80px; font-weight:500;">
-        <p>Okinawa Family Trip 2026. Designed with perfection.</p>
-        <p style="margin-top:8px;">Copyright © 2026. All rights reserved.</p>
-      </footer>
+        {/* Sentimental Conclusion */}
+        <section class="section reveal" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 20px', background: 'linear-gradient(180deg, #f7f9fa 0%, #fff 100%)' }}>
+          <div class="text-center" style="max-width: 800px;">
+            <h2 class="section-title" style="font-size: clamp(32px, 6vw, 48px); margin-bottom: 32px; color: var(--primary-dark);">不只是旅行</h2>
+            <p class="section-body" style="font-size: clamp(18px, 3vw, 24px); line-height: 1.8; color: var(--text-secondary); font-weight: 300;">
+              留住海風。<br />
+              收藏最溫暖的記憶。<br />
+            </p>
+            <div style="margin-top: 60px; font-weight: 600; letter-spacing: 0.2em; color: var(--text-tertiary); font-size: 14px;">
+              OKINAWA · 2026
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   )
 }
