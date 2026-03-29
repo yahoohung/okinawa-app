@@ -2,90 +2,114 @@
   {
     "id": "ryukyu_ushi",
     "name": "琉球の牛 國際通店",
-    "type": "燒肉 · 那霸國際通",
-    "desc": "恩納村人氣第一燒肉店進駐國際通，A5沖繩縣產和牛，全包廂設計，備有兒童椅，牛肉刺身同燒肉質素極高。",
-    "note": "TableCheck 英文預約 · 17:00-22:30",
+    "type": "頂級和牛燒肉 · 那霸國際通",
+    "desc": "Day 1 晚餐。沖繩縣產和牛，全包廂設計，8 人大隊可以喺私人空間慢慢燒，唔怕細路吵。牛肉刺身同極上牛舌係必試項目。",
+    "note": "TableCheck 預約 · 建議 21:00 以避開國際通塞車潮",
+    "img": "ryukyu-ushi.jpg",
     "booked": false,
     "needsBooking": true
+  },
+  {
+    "id": "danbo_urasoe",
+    "name": "暖暮拉麵 浦添店",
+    "type": "拉麵 · 浦添市",
+    "desc": "Day 2 Lunch。比起國際通分店，呢度位多、好泊車。口味大眾化，細路鍾意，大人加配一口餃子最爽。",
+    "note": "國道 58 號順路 · 毋須預約",
+    "img": "danbo-urasoe.jpg",
+    "booked": false,
+    "needsBooking": false
   },
   {
     "id": "agu_pork",
-    "name": "百年古家 大家（うふやー）",
-    "type": "阿古豬琉球料理 · 名護市中山",
-    "desc": "百年歷史琉球古宅，阿古豬涮涮鍋入口即化，榻榻米座位，附有掘炬燵包廂適合小朋友。",
-    "note": "TableCheck 英文預約 · 90分鐘制",
+    "name": "百年古家 大家 (うふやー)",
+    "type": "阿古豬琉球料理 · 名護",
+    "desc": "Day 2 晚餐。百年古宅瀑布景觀，阿古豬涮涮鍋入口即化。榻榻米包廂對小朋友同婆婆都非常友善。",
+    "note": "TableCheck 預約 · 名護 Villa 開車 15 分鐘",
+    "img": "agu-pork.jpg",
     "booked": false,
     "needsBooking": true
   },
   {
+    "id": "kura_sushi_nago",
+    "name": "無添 くら寿司 名護店",
+    "type": "迴轉壽司 · 名護市",
+    "desc": "Day 3 Lunch。食材新鮮，最緊要係 3 個細路有得玩扭蛋，大人可以趁機清靜少少食嘢。位多、好泊車。",
+    "note": "名護 Birthday 隔鄰 · 毋須預約",
+    "img": "https://www.ryukyu-asahi.jp/wp-content/uploads/2021/04/kura-sushi.jpg",
+    "booked": false,
+    "needsBooking": false
+  },
+  {
     "id": "hamanoya",
-    "name": "濱之家（浜の家）",
+    "name": "濱之家 (浜の家)",
     "type": "海鮮料理 · 恩納村",
-    "desc": "前漁夫嚴選新鮮海產，招牌奶油烤魚鐵板吱吱作響，海膽焗烤龍蝦濃郁鮮美，有包廂。",
-    "note": "Tabelog預約 / 電話 · 11:00-22:00",
+    "desc": "Day 3 晚餐。名產奶油烤魚鐵板吱吱作響，海膽焗烤龍蝦極濃郁。係恩納區老牌高水準海鮮，婆婆一定讚好。",
+    "note": "電話預約優先 · 恩納 Villa 開車 12 分鐘",
     "booked": false,
     "needsBooking": true
+  },
+  {
+    "id": "yakiniku_goen",
+    "name": "燒肉五苑 具志川店",
+    "type": "燒肉放題 · 具志川",
+    "desc": "Day 4 Lunch。掃 Birthday 具志川旗艦店前嘅能量站。放題模式，CP 值高，空間感大，適合 8 人大隊。",
+    "note": "具志川商圈內 · 位多好泊車",
+    "booked": false,
+    "needsBooking": false
+  },
+  {
+    "id": "kaihomaru",
+    "name": "海人料理 海邦丸",
+    "type": "海鮮料理 · 本部町",
+    "desc": "Day 5 Lunch。喺元氣村隔鄰，玩海豚前必食。海鮮丼質素全區數一數二，海葡萄定食係招牌。",
+    "note": "元氣村開車 5 分鐘 · 11:00-15:00",
+    "booked": false,
+    "needsBooking": false
+  },
+  {
+    "id": "seaside_burger",
+    "name": "Seaside Jet City Burger",
+    "type": "美式漢堡 · 美國村",
+    "desc": "Day 5 晚餐。美國村海景第一排，望住海食 Juicy 漢堡，全家 8 人一齊感受沖繩夜生活氣氛。",
+    "note": "美國村 Depot Island · 18:00 後最有氣氛",
+    "booked": false,
+    "needsBooking": false
+  },
+  {
+    "id": "onna_no_eki",
+    "name": "恩納之驛 (Nakayukui Market)",
+    "type": "地道美食站 · 恩納村",
+    "desc": "Day 6 Lunch。最強驛站，必食海膽焗龍蝦、豬肉蛋飯糰、同埋「琉冰」嘅果實刨冰。8 個人分頭買再一齊食。",
+    "note": "B級美食殿堂 · 建議 11:30 前到達以搶位",
+    "img": "onna-no-eki.jpg",
+    "booked": false,
+    "needsBooking": false
   },
   {
     "id": "agu_manza",
     "name": "阿古豬隱家 · 萬座店",
-    "type": "阿古豬+石垣牛+海鮮 · 恩納村萬座",
-    "desc": "萬座毛附近，阿古豬+石垣牛+沖繩新鮮車蝦，涮涮鍋等多種煮法選，中英日文菜單。",
-    "note": "Klook/Gurunavi預約 · 17:00-22:30",
+    "type": "阿古豬涮涮鍋 · 恩納萬座",
+    "desc": "Day 6 晚餐。恩納慢活日嘅壓軸，阿古豬配特製沾醬。全包廂環境，確保長輩食得舒心，細路唔會走失。",
+    "note": "Hotpepper/官網預約 · 恩納 Villa 開車 10 分鐘",
     "booked": false,
     "needsBooking": true
   },
   {
-    "id": "wagyu",
-    "name": "燒肉本部牧場 國際通店",
-    "type": "本部牛燒肉 · 那霸國際通",
-    "desc": "牧場直營A4/A5本部牛，獲日本農林水產大臣獎，油花均勻入口即化，旅程最後晚餐壓軸之選。",
-    "note": "Klook/官網預約 · 11:30-15:00 / 17:00-22:00",
+    "id": "yakiniku_king",
+    "name": "燒肉王 (新都心店)",
+    "type": "燒肉放題 · 那霸新都心",
+    "desc": "Day 7 慶功宴。替代國際通嘅方案，泊車方便極多。四大名產牛肉放題，適合作為 8 日旅程嘅完美終結。",
+    "note": "官網 App 預約 · 推薦「國產牛套餐」",
+    "img": "yakiniku-king.jpg",
     "booked": false,
     "needsBooking": true
   },
   {
-    "id": "onigiri",
-    "name": "豬肉蛋飯糰 牧志市場店",
-    "type": "傳統早餐 · 國際通",
-    "desc": "沖繩必吃國民早餐，海苔包飯配煎蛋午餐肉，簡單美味，小朋友必愛。",
-    "note": "07:00-17:30 · 牧志市場",
-    "booked": false,
-    "needsBooking": false
-  },
-  {
-    "id": "sushi",
-    "name": "グルメ迴轉壽司",
-    "type": "迴轉壽司 · 美國村",
-    "desc": "美國村網友激推第一美食，產地直送新鮮漁獲，CP值爆表。",
-    "note": "美國村內 · 約11:00起",
-    "booked": false,
-    "needsBooking": false
-  },
-  {
-    "id": "soba",
-    "name": "岸本食堂",
-    "type": "沖繩麵 · 本部町",
-    "desc": "美麗海水族館附近人氣沖繩麵老舖，湯頭清甜醇厚，在地人強推。",
-    "note": "美麗海水族館附近",
-    "booked": false,
-    "needsBooking": false
-  },
-  {
-    "id": "kajinhou",
-    "name": "花人逢",
-    "type": "海景 Pizza · 本部町",
-    "desc": "紅磚古屋海景披薩，石窯薄底，可一覧伊江島海景，氣氛浪漫。",
-    "note": "建議提前訂位",
-    "booked": false,
-    "needsBooking": true
-  },
-  {
-    "id": "fisher_dining",
-    "name": "糸滿漁民食堂",
-    "type": "海鮮 · 糸滿市",
-    "desc": "糸滿漁港附近海鮮食堂，海鮮丼、刺身超新鮮，玉泉洞後順路。",
-    "note": "南部海鮮代表",
+    "id": "jef_burger",
+    "name": "JEF Burger iias 豐崎店",
+    "type": "沖繩限定漢堡 · 豐崎",
+    "desc": "Day 8 Lunch。上機前最後一餐。必試苦瓜漢堡，味道獨特唔苦。美食廣場位多，方便婆婆坐低休息。",
+    "note": "iias 豐崎 2F 美食廣場 · 毋須預約",
     "booked": false,
     "needsBooking": false
   }

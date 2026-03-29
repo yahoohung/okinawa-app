@@ -1,0 +1,517 @@
+[
+    {
+        "day": 1,
+        "date": "4月4日（六）",
+        "title": "抵達那霸 · 國際通",
+        "intensity": "輕鬆",
+        "highlights": [
+            {
+                "img": "kokusai",
+                "caption": "那霸國際通。沖繩最熱鬧的第一公里路。"
+            }
+        ],
+        "events": [
+            {
+                "time": "19:30",
+                "title": "抵達那霸機場 (OKA)",
+                "mapcode": "33 123 331*21"
+            },
+            {
+                "transit": {
+                    "mode": "monorail",
+                    "label": "🚝 單軌電車往壺川站",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "20:30",
+                "title": "入住 Tokyu Stay 沖繩那霸",
+                "mapcode": "33 126 130*38"
+            },
+            {
+                "transit": {
+                    "mode": "walk",
+                    "label": "🚶 往國際通方向",
+                    "time": "8 分鐘"
+                }
+            },
+            {
+                "time": "晚餐",
+                "title": "琉球の牛 國際通店",
+                "mapcode": "33 157 444*58",
+                "isFood": true,
+                "needsBooking": true
+            }
+        ]
+    },
+    {
+        "day": 2,
+        "date": "4月5日（日）",
+        "title": "北上名護 · 購物與海中探索",
+        "intensity": "中等",
+        "highlights": [
+            {
+                "img": "busena",
+                "caption": "部瀨名海中公園。探索沖繩的深藍色大海。"
+            }
+        ],
+        "events": [
+            {
+                "time": "10:00",
+                "title": "第一站：由那霸酒店出發"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往浦添 (經國道 58 號)",
+                    "time": "25 分鐘"
+                }
+            },
+            {
+                "time": "10:25",
+                "title": "Birthday 港川店",
+                "mapcode": "33 312 052*71"
+            },
+            {
+                "time": "12:00",
+                "title": "Lunch：港川商圈 (P's SQUARE)",
+                "mapcode": "33 312 301*77",
+                "isFood": true
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 行駛高速北上",
+                    "time": "50 分鐘"
+                }
+            },
+            {
+                "time": "14:30",
+                "title": "第三站：部瀨名海中公園",
+                "mapcode": "206 442 075*11"
+            },
+            {
+                "time": "16:30",
+                "title": "第四站：入住 Reflexion GLANZ",
+                "mapcode": "206 685 889*88"
+            },
+            {
+                "time": "晚餐",
+                "title": "百年古家 大家 (うふやー)",
+                "mapcode": "206 745 056*82",
+                "isFood": true,
+                "needsBooking": true
+            }
+        ]
+    },
+    {
+        "day": 3,
+        "date": "4月6日（一）",
+        "title": "北部精華遊 · 轉場恩納別墅",
+        "intensity": "中等",
+        "highlights": [
+            {
+                "img": "churaumi",
+                "caption": "美麗海水族館。世界級水槽的視覺震撼。"
+            },
+            {
+                "img": "neoparkokinawaticket.jpg",
+                "caption": "Neo Park。蒸汽小火車穿梭自然公園。"
+            }
+        ],
+        "events": [
+            {
+                "time": "10:15",
+                "title": "第一站：由名護 Villa 出發"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往本部半島",
+                    "time": "30 分鐘"
+                }
+            },
+            {
+                "time": "10:45",
+                "title": "第二站：美麗海水族館",
+                "mapcode": "553 075 797*77"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 返回名護市中心",
+                    "time": "30 分鐘"
+                }
+            },
+            {
+                "time": "13:30",
+                "title": "第三站：Birthday 名護店 & Lunch",
+                "mapcode": "206 657 888*55",
+                "isFood": true
+            },
+            {
+                "time": "15:30",
+                "title": "第四站：Neo Park",
+                "mapcode": "206 689 725*44"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 南下恩納",
+                    "time": "25 分鐘"
+                }
+            },
+            {
+                "time": "18:00",
+                "title": "第五站：入住 Kokoni Chill House",
+                "mapcode": "206 381 247*74"
+            },
+            {
+                "time": "晚餐",
+                "title": "濱之家 (浜の家)",
+                "mapcode": "206 035 759*47",
+                "isFood": true
+            }
+        ]
+    },
+    {
+        "day": 4,
+        "date": "4月7日（二）",
+        "title": "中部放電與最強 Mall 購物",
+        "intensity": "中偏高",
+        "highlights": [
+            {
+                "img": "1n920224x8z4b2kjheeeb.jpg",
+                "caption": "沖繩兒童王國。親子互動與放電勝地。"
+            },
+            {
+                "img": "20250309-102905-4b7d0048-w1920.webp",
+                "caption": "來客夢。大魚缸前的購物奇境。"
+            }
+        ],
+        "events": [
+            {
+                "time": "10:00",
+                "title": "第一站：由恩納 Villa 出發"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 經高速往沖繩市",
+                    "time": "45 分鐘"
+                }
+            },
+            {
+                "time": "10:45",
+                "title": "第二站：沖繩兒童王國",
+                "mapcode": "33 561 798*33"
+            },
+            {
+                "time": "13:30",
+                "title": "Lunch：具志川商圈",
+                "mapcode": "33 656 316*11",
+                "isFood": true
+            },
+            {
+                "time": "14:45",
+                "title": "第三站：Birthday 具志川店 + 西松屋",
+                "mapcode": "33 656 250*66"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往來客夢方向",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "16:45",
+                "title": "第四站：AEON MALL Rycom",
+                "mapcode": "33 530 406*45",
+                "isFood": true
+            }
+        ]
+    },
+    {
+        "day": 5,
+        "date": "4月8日（三）",
+        "title": "海豚預約日 · 北部跨海美景",
+        "intensity": "中等",
+        "highlights": [
+            {
+                "img": "1558597623-2473835719.jpg",
+                "caption": "本部元氣村。與海豚親密接觸的感動時刻。"
+            },
+            {
+                "img": "manzamo.jpg",
+                "caption": "萬座毛。夕陽下的經典象鼻岩。"
+            }
+        ],
+        "events": [
+            {
+                "time": "09:30",
+                "title": "第一站：由恩納 Villa 出發"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往古宇利島",
+                    "time": "1 小時"
+                }
+            },
+            {
+                "time": "10:30",
+                "title": "第二站：古宇利大橋 & 心形岩",
+                "mapcode": "485 752 411*22"
+            },
+            {
+                "time": "12:00",
+                "title": "Lunch：本部町海景餐廳",
+                "isFood": true
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往元氣村",
+                    "time": "5 分鐘"
+                }
+            },
+            {
+                "time": "13:40",
+                "title": "第三站：本部元氣村 (報到)",
+                "mapcode": "553 076 077*63"
+            },
+            {
+                "time": "14:00",
+                "title": "海豚接觸體驗 (50分鐘)",
+                "booked": true
+            },
+            {
+                "transit": {
+                    "mode": "walk",
+                    "label": "🐬 換衫、攞車",
+                    "time": "40 分鐘"
+                }
+            },
+            {
+                "time": "16:20",
+                "title": "第四站：萬座毛 (Sunset Time)",
+                "mapcode": "206 312 039*17"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往北谷町方向",
+                    "time": "45 分鐘"
+                }
+            },
+            {
+                "time": "18:45",
+                "title": "晚餐：美國村 (American Village)",
+                "mapcode": "33 526 450*63",
+                "isFood": true
+            }
+        ]
+    },
+    {
+        "day": 6,
+        "date": "4月9日（四）",
+        "title": "恩納深度慢活 · 親子秘境放電",
+        "intensity": "輕鬆",
+        "highlights": [
+            {
+                "img": "20240220-161929-ff953f57-w1920.webp",
+                "caption": "Bios no Oka。蘭花船與原生態大鞦韆。"
+            },
+            {
+                "img": "p47040004-01.jpg",
+                "caption": "殘波岬。壯闊斷崖與純白燈塔。"
+            }
+        ],
+        "events": [
+            {
+                "time": "10:30",
+                "title": "第一站：由恩納 Villa 出發"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往恩納之驛",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "11:15",
+                "title": "第二站 Lunch：恩納之驛",
+                "mapcode": "206 035 767*28",
+                "isFood": true
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往 Bios no Oka",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "13:15",
+                "title": "第三站：Bios no Oka",
+                "mapcode": "206 005 351*33"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往殘波岬公園",
+                    "time": "30 分鐘"
+                }
+            },
+            {
+                "time": "16:15",
+                "title": "第四站：殘波岬公園 (大型遊樂場)",
+                "mapcode": "1005 685 380*00"
+            },
+            {
+                "time": "18:30",
+                "title": "晚餐：阿古豬隱家 萬座店",
+                "mapcode": "206 313 416*82",
+                "isFood": true,
+                "needsBooking": true
+            }
+        ]
+    },
+    {
+        "day": 7,
+        "date": "4月10日（五）",
+        "title": "南部文化與新都心購物雙戰線",
+        "intensity": "中偏高",
+        "highlights": [
+            {
+                "img": "2111847.jpg",
+                "caption": "玉泉洞。探索地底神秘的鐘乳石世界。"
+            },
+            {
+                "img": "11.jpeg",
+                "caption": "新都心。那霸最強生活百貨購物站。"
+            }
+        ],
+        "events": [
+            {
+                "time": "09:15",
+                "title": "第一站：由恩納 Villa 出發"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往南部玉泉洞",
+                    "time": "1 小時 15 分鐘"
+                }
+            },
+            {
+                "time": "10:30",
+                "title": "第二站：玉泉洞 (文化王國) + 12:30 太鼓表演",
+                "mapcode": "232 495 330*28"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 北上往那霸新都心",
+                    "time": "45 分鐘"
+                }
+            },
+            {
+                "time": "14:00",
+                "title": "第三站 Lunch：新都心",
+                "mapcode": "33 188 293*63",
+                "subtitle": " 隨心",
+                "isFood": true
+            },
+            {
+                "time": "15:30",
+                "title": "第四站：DFS + San-A Naha Main Place",
+                "mapcode": "33 188 559*33"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往浦添方向",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "17:45",
+                "title": "第五站：SAN-A Parco City (阿卡將最終站)",
+                "mapcode": "33 341 454*11"
+            },
+            {
+                "time": "20:00",
+                "title": "晚餐：燒肉王 (新都心店)",
+                "mapcode": "33 188 775*58",
+                "isFood": true,
+                "needsBooking": true
+            }
+        ]
+    },
+    {
+        "day": 8,
+        "date": "4月11日（六）",
+        "title": "南部舒適區 · 完美返港",
+        "intensity": "中等",
+        "highlights": [
+            {
+                "img": "1n914224x8zfqtzth5be2.jpg",
+                "caption": "DMM Kariyushi水族館。深海的新視界體驗。"
+            },
+            {
+                "img": "p47010004-08t.jpg",
+                "caption": "Ashibinaa Outlet。最後衝刺。"
+            }
+        ],
+        "events": [
+            {
+                "time": "10:30",
+                "title": "第一站：由恩納 Villa 出發"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 南下往豐崎區",
+                    "time": "1 小時"
+                }
+            },
+            {
+                "time": "11:30",
+                "title": "第二站：iias 豐崎 & DMM 水族館",
+                "mapcode": "232 543 400*25",
+                "isFood": true
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 極短車程",
+                    "time": "5 分鐘"
+                }
+            },
+            {
+                "time": "15:00",
+                "title": "第三站：Ashibinaa Outlet",
+                "mapcode": "232 544 452*22"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往赤嶺還車店",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "18:00",
+                "title": "第四站：機場還車 (Toyota 赤嶺店)",
+                "mapcode": "33 095 561*33"
+            },
+            {
+                "time": "20:25",
+                "title": "UO825 飛機返港"
+            }
+        ]
+    }
+]

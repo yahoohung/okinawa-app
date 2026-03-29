@@ -1,52 +1,64 @@
 import { useEffect } from 'preact/hooks'
 import './index.css'
 
-// Hero & Feature Images
-import heroImg from './assets/hero1.jpg'
-import aquaImg from './assets/1.jpg'
-import churaumiImg from './assets/20170925173451_41.jpg'
-import gyokusendoImg from './assets/2111847.jpg'
-import manzamoImg from './assets/manzamo.png'
-import busenaImg from './assets/20220910_102538_80ae1c31_w1920.webp'
-import sientaImg from './assets/sienta_ext_596x396_070.png.webp'
-import dolphinImg from './assets/dolphin.png'
-import kokusaiImg from './assets/kokusai.png'
-import fisherImg from './assets/p47010027_03.jpg'
-import aguManzaImg from './assets/1560224843-2056648340.jpg'
-import pizzaImg from './assets/fit=scale-down,w=1200.avif'
-import ryukyuUshiImg from './assets/20250718150116_0_179f85.jpg'
-import hamanoyaImg from './assets/shopinfo_img003.jpg'
-
-// Hotel Images
-import tokyuImg from './assets/tokyu.png'
-import kokoniImg from './assets/459fc3af-d480-486e-9382-aca4f01234a3.jpg.avif'
-import villaImg from './assets/villa.png'
-
-// Food Images
-import wagyuImg from './assets/wagyu.png'
-import aguPorkImg from './assets/agu_pork.png'
-import lobsterImg from './assets/lobster.png'
-import sushiImg from './assets/sushi.png'
-import sobaImg from './assets/soba.png'
-import onigiriImg from './assets/onigiri.png'
-
-import itineraryData from './data/itinerary.json'
+import itineraryData from './data/itinerary2.json'
 import foodData from './data/food.json'
 
-const foodImages: Record<string, string> = {
-  wagyu: wagyuImg,
-  agu_pork: aguPorkImg,
-  lobster: lobsterImg,
-  sushi: sushiImg,
-  soba: sobaImg,
-  onigiri: onigiriImg,
-  fisher_dining: fisherImg,
-  agu_manza: aguManzaImg,
-  ryukyu_ushi: ryukyuUshiImg,
-  hamanoya: hamanoyaImg,
-  kajinhou: pizzaImg,
-  pizza: pizzaImg // fallback
-}
+// Dynamic Image Loading System
+// This automatically finds all images in the assets folder
+const imageModules = import.meta.glob('./assets/*.{png,jpg,jpeg,webp,avif,svg}', { eager: true, as: 'url' });
+
+/**
+ * Helper to get image URL by filename/key
+ * Supports: 
+ * 1. Exact match (e.g. "hero1.jpg")
+ * 2. Key match (e.g. "kokusai" matches "kokusai.png")
+ * 3. Fallback to placeholder
+ */
+// Map legacy names or descriptive keys to actual filenames if they don't match exactly
+const legacyMapper: Record<string, string> = {
+  'ryukyu_ushi': '20250718150116_0_179f85.jpg',
+  'hamanoya': 'shopinfo_img003.jpg',
+  'agu_manza': '1560224843-2056648340.jpg',
+  'fisher_dining': 'p47010027_03.jpg',
+  'kajinhou': 'fit=scale-down,w=1200.avif',
+  'pizza': 'fit=scale-down,w=1200.avif',
+  'churaumi': '20170925173451_41.jpg',
+  'gyokusendo': '2111847.jpg',
+  'busena': '20220910_102538_80ae1c31_w1920.webp',
+  'aqua': '1.jpg'
+};
+
+/**
+ * Helper to get image URL by filename/key
+ */
+const getImage = (name: string | undefined): string => {
+  if (!name) return 'https://placehold.co/600x400?text=No+Image';
+
+  // 1. Try legacy mapper first
+  const mappedName = legacyMapper[name] || name;
+
+  // 2. Try exact match
+  if (imageModules[`./assets/${mappedName}`]) {
+    return imageModules[`./assets/${mappedName}`] as string;
+  }
+
+  // 3. Try matching by filename without extension
+  const matches = Object.keys(imageModules).filter(path => {
+    const filename = path.split('/').pop() || '';
+    const base = filename.split('.').slice(0, -1).join('.');
+    return base === mappedName || filename === mappedName;
+  });
+
+  if (matches.length > 0) {
+    return imageModules[matches[0]] as string;
+  }
+
+  // 4. Fallback for specific hardcoded placeholders
+  if (name === 'placeholder') return 'https://placehold.co/600x400?text=Okinawa';
+
+  return 'https://placehold.co/600x400?text=' + encodeURIComponent(name);
+};
 
 function useReveal() {
   useEffect(() => {
@@ -68,19 +80,6 @@ function useReveal() {
 export function App() {
   useReveal();
 
-  const getImagesForDay = (day: number) => {
-    if (day === 1) return [{ img: kokusaiImg, caption: "那霸國際通。越夜，越精彩。" }];
-    if (day === 2) return [{ img: aquaImg, caption: "DMM Kariyushi水族館。深海的新視界。" }];
-    if (day === 3) return [
-      { img: busenaImg, caption: "部瀨名海中公園。探索沖繩的深藍色大海。" },
-      { img: churaumiImg, caption: "美麗海水族館。世界級水槽的視覺震撼。" }
-    ];
-    if (day === 4) return [{ img: manzamoImg, caption: "萬座毛。絕美日落，隨時定格。" }];
-    if (day === 5) return [{ img: dolphinImg, caption: "本部元氣村。與海洋之心的親密接觸。" }];
-    if (day === 7) return [{ img: gyokusendoImg, caption: "玉泉洞。探索地底的神秘世界。" }];
-    return [];
-  }
-
   const getRecommendedFoodsForDay = (day: number) => {
     if (day === 2) return [foodData.find(f => f.id === 'onigiri')];
     if (day === 4) return [foodData.find(f => f.id === 'sushi')];
@@ -96,7 +95,7 @@ export function App() {
         class={`reveal food-card ${food.needsBooking && !food.booked ? 'needs-booking' : ''}`}
       >
         <div class="food-card-image-wrapper">
-          <img src={foodImages[food.id]} alt={food.name} />
+          <img src={getImage(food.img || food.id)} alt={food.name} />
         </div>
 
         <div class="food-card-content">
@@ -124,7 +123,7 @@ export function App() {
       {/* Minimal immersive experience - no global navigation */}
 
       <header class="hero">
-        <img src={heroImg} alt="Okinawa Pristine Beach" class="hero-bg" />
+        <img src={getImage('hero1.jpg')} alt="Okinawa Pristine Beach" class="hero-bg" />
         <div class="hero-content">
           <h1 class="hero-headline">Okinawa 2026.</h1>
           <h2 class="hero-subheadline">每一刻，都精彩絕倫。</h2>
@@ -151,7 +150,7 @@ export function App() {
           <div class="grid" style="max-width: 1100px; width: 100%; margin: 0 auto;">
             {/* Tokyu Stay */}
             <div class="accommodation-card reveal col-span-4" style="min-height: 500px;">
-              <img src={tokyuImg} alt="Tokyu Stay Naha" class="card-bg" />
+              <img src={getImage('tokyu.png')} alt="Tokyu Stay Naha" class="card-bg" />
               <div class="large-number-bg">01</div>
               <div class="accommodation-overlay">
                 <h3 style="font-size: clamp(24px, 4vw, 32px); font-weight:700; color:#fff; line-height:1.1; margin-bottom: 0;">
@@ -162,7 +161,7 @@ export function App() {
 
             {/* GLANZ */}
             <div class="accommodation-card reveal col-span-8" style="min-height: 500px;">
-              <img src={villaImg} alt="Reflexion Villas GLANZ" class="card-bg" />
+              <img src={getImage('villa.png')} alt="Reflexion Villas GLANZ" class="card-bg" />
               <div class="large-number-bg">02</div>
               <div class="accommodation-overlay">
                 <h3 style="font-size: clamp(28px, 5vw, 42px); font-weight:700; color:#fff; line-height:1.1; margin-bottom:0;">
@@ -174,7 +173,7 @@ export function App() {
             {/* Kokoni */}
             <div class="accommodation-card accommodation-split reveal col-span-12">
               <div class="split-img-container">
-                <img src={kokoniImg} alt="Kokoni Chill House" class="split-img" />
+                <img src={getImage('459fc3af-d480-486e-9382-aca4f01234a3.jpg.avif')} alt="Kokoni Chill House" class="split-img" />
               </div>
               <div class="split-content">
                 <div class="large-number-bg" style="top: auto; bottom: -20px;">03</div>
@@ -195,23 +194,14 @@ export function App() {
               <div class="vehicle-header">
                 <h3 class="vehicle-title">雙車編制。<br />全方位守護。</h3>
                 <p class="vehicle-description">
-                  兩輛 Toyota Sienta Hybrid。結合極致寧靜與現代主動安全科技，為全家人提供最順滑、放心的移動體驗。
+                  兩輛 Toyota Sienta Hybrid。結合極致寧靜與現代主動安全科技，提供最順滑、放心的移動體驗。
                 </p>
-              </div>
-
-              <div class="vehicle-specs">
-                <div class="spec-item">
-                  <div class="spec-value" style="font-size: 32px; font-weight: 700;">Safety 3.0</div>
-                </div>
-                <div class="spec-item">
-                  <div class="spec-value" style="font-size: 32px; font-weight: 700;">Hybrid Power</div>
-                </div>
               </div>
             </div>
 
             <div class="vehicle-visual">
               <div class="car-wrapper car-float">
-                <img src={sientaImg} alt="Toyota Sienta Hybrid" class="car-hero-img" />
+                <img src={getImage('sienta_ext_596x396_070.png.webp')} alt="Toyota Sienta Hybrid" class="car-hero-img" />
               </div>
             </div>
           </div>
@@ -229,15 +219,13 @@ export function App() {
         {/* Day-by-Day Itinerary Timeline */}
         <div class="timeline">
           {itineraryData.map((day) => {
-            const photoHighlights = getImagesForDay(day.day);
-
             return (
               <div class="timeline-item" key={day.day}>
                 <div class="day-header reveal">
-                  <div class="day-intensity" style="font-size: clamp(40px, 10vw, 80px); font-weight: 800; line-height: 1; letter-spacing: -0.04em;">
+                  <div class="day-intensity" style="font-size: clamp(40px, 10vw, 80px); font-weight: 800; line-height: 1; letter-spacing: -0.04em; color: var(--primary);">
                     DAY {day.day}.
                   </div>
-                  <div class="day-title-massive">DAY {day.day}.</div>
+                  <div class="day-title-massive">{day.date}</div>
                 </div>
 
                 <div class="day-spine"></div>
@@ -245,9 +233,9 @@ export function App() {
                 <div style="position:relative; z-index:2;">
                   <h3 class="reveal day-title-text" style="font-size: clamp(24px, 5vw, 32px); font-weight:600; margin-bottom: 48px; color:var(--text-main);">{day.title}。</h3>
 
-                  {photoHighlights.map((photo: any, i: number) => (
+                  {day.highlights?.map((photo: any, i: number) => (
                     <div class={`photo-highlight reveal reveal-delay-${(i % 2) + 1}`} key={i} style={{ marginBottom: '64px', marginLeft: '0px' }}>
-                      <img src={photo.img} alt={photo.caption} />
+                      <img src={getImage(photo.img)} alt={photo.caption} />
                       <div class="photo-caption">{photo.caption}</div>
                     </div>
                   ))}
@@ -271,7 +259,7 @@ export function App() {
                             <div class={`event-node ${evt.isFood ? 'food' : ''}`}></div>
                             <div class="event-time">{evt.time}</div>
                             <div class="event-details" style={{ flex: 1 }}>
-                              <div class="event-title" style={evt.isFood ? { color: '#ff9f0a' } : {}}>
+                              <div class="event-title" style={evt.isFood ? { color: 'var(--accent-gold)' } : {}}>
                                 {evt.title}
                                 {evt.booked && <span class="timeline-badge booked-badge">已預約</span>}
                                 {evt.needsBooking && !evt.booked && <span class="timeline-badge needs-booking-badge">需提早預約</span>}
@@ -280,7 +268,12 @@ export function App() {
                             </div>
                           </div>
                           {evt.isFood && (() => {
-                            const match = foodData.find(f => f.name === evt.title || f.name === evt.title.replace(' · ', ' ') || evt.title.includes(f.name.split(' ')[0]));
+                            const match = foodData.find(f => {
+                              if (!f || !f.name) return false;
+                              return f.name === evt.title ||
+                                f.name === evt.title.replace(' · ', ' ') ||
+                                evt.title.includes(f.name.split(' ')[0]);
+                            });
                             if (!match) return null;
                             return (
                               <div class="reveal day-title-text" style={{ paddingRight: '24px', marginBottom: '48px', marginTop: '-16px' }}>
@@ -293,26 +286,7 @@ export function App() {
                     })}
                   </div>
 
-                  {(() => {
-                    const recommended = getRecommendedFoodsForDay(day.day);
-                    if (recommended.length === 0 || !recommended[0]) return null;
-                    return (
-                      <div class="reveal day-title-text" style={{ marginTop: '48px' }}>
-                        <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '40px', paddingRight: '24px' }}>
-                          <h4 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--primary-dark)', marginBottom: '32px', display: 'flex', alignItems: 'center', gap: '12px', letterSpacing: '0.05em' }}>
-                            <span style={{ fontSize: '22px' }}>🍽️</span> 當區推薦美食
-                          </h4>
-                          <div class="grid">
-                            {recommended.map((food, idx) => (
-                              <div class="col-span-12" key={idx}>
-                                {renderFoodCard(food)}
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  })()}
+
                 </div>
               </div>
             )
@@ -324,10 +298,10 @@ export function App() {
         {/* Sentimental Conclusion */}
         <section class="section reveal" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 20px', background: 'linear-gradient(180deg, #f7f9fa 0%, #fff 100%)' }}>
           <div class="text-center" style="max-width: 800px;">
-            <h2 class="section-title" style="font-size: clamp(32px, 6vw, 48px); margin-bottom: 32px; color: var(--primary-dark);">不只是旅行</h2>
+            <h2 class="section-title" style="font-size: clamp(32px, 6vw, 48px); margin-bottom: 32px; color: var(--primary-dark);">這，不只是旅行。</h2>
             <p class="section-body" style="font-size: clamp(18px, 3vw, 24px); line-height: 1.8; color: var(--text-secondary); font-weight: 300;">
-              留住海風。<br />
-              收藏最溫暖的記憶。<br />
+              定格，海邊的笑聲。<br />
+              收藏，最純粹的溫暖。<br />
             </p>
             <div style="margin-top: 60px; font-weight: 600; letter-spacing: 0.2em; color: var(--text-tertiary); font-size: 14px;">
               OKINAWA · 2026

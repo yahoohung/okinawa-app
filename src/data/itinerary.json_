@@ -1,0 +1,399 @@
+[
+  {
+    "day": 1,
+    "date": "4月4日(六)",
+    "title": "抵達那霸 · 國際通",
+    "intensity": "輕鬆",
+    "events": [
+      {
+        "time": "19:30",
+        "title": "抵達那霸機場 (OKA) · 搭單軌電車 (Yui Rail) → 壺川站",
+        "subtitle": "約15分鐘，步行至 Tokyu Stay 僅 3 分鐘"
+      },
+      {
+        "transit": {
+          "mode": "walk",
+          "label": "步行前往酒店",
+          "time": "約 3 分鐘"
+        }
+      },
+      {
+        "time": "20:30",
+        "title": "入住 Tokyu Stay 沖繩那霸 (東急ステイ沖縄那覇)",
+        "subtitle": "樓下有超市及驚安殿堂，方便即時補給"
+      },
+      {
+        "transit": {
+          "mode": "walk",
+          "label": "步行至餐廳",
+          "time": "約 8 分鐘"
+        }
+      },
+      {
+        "time": "晚餐",
+        "title": "琉球の牛 國際通店",
+        "subtitle": "頂級沖繩和牛燒肉 · 獨立包廂 · 建議預約",
+        "isFood": true,
+        "booked": false,
+        "needsBooking": true
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "date": "4月5日(日)",
+    "title": "南部景點 · 移師名護",
+    "intensity": "中等",
+    "events": [
+      {
+        "time": "09:30",
+        "title": "司機往機場取車 (Toyota Sienta)",
+        "subtitle": "其餘家人於酒店整理行李及樓下超市採購食材"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車前往南部",
+          "time": "約 20 分鐘"
+        }
+      },
+      {
+        "time": "11:00",
+        "title": "DMM Kariyushi 水族館 + iias 豐崎商場",
+        "subtitle": "互動型水族館 · 商場內解決午餐及初步購物"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 10 分鐘"
+        }
+      },
+      {
+        "time": "14:30",
+        "title": "瀨長島 (瀬長島ウミカジテラス)",
+        "subtitle": "海景、睇飛機、歎甜品"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "行駛高速公路北上",
+          "time": "約 1 小時 15 分鐘"
+        }
+      },
+      {
+        "time": "17:00",
+        "title": "入住 Reflexion GLANZ (名護市)",
+        "subtitle": "名護包棟無邊際泳池 Villa"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 15 分鐘"
+        }
+      },
+      {
+        "time": "晚餐",
+        "title": "百年古家 大家 (うふやー)",
+        "subtitle": "古宅阿古豬涮涮鍋 · 環境一流 · 建議預約",
+        "isFood": true,
+        "booked": false,
+        "needsBooking": true
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "date": "4月6日(一)",
+    "title": "北部精華遊 · 下榻恩納村",
+    "intensity": "中等",
+    "events": [
+      {
+        "time": "10:30",
+        "title": "Reflexion GLANZ 退房",
+        "subtitle": ""
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車往水族館",
+          "time": "約 25 分鐘"
+        }
+      },
+      {
+        "time": "11:00",
+        "title": "美麗海水族館 (沖縄美ら海水族館)",
+        "subtitle": "鯨鯊餵食、黑潮之海"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 10 分鐘"
+        }
+      },
+      {
+        "time": "13:30",
+        "title": "Birthday 名護店 (及周邊午餐)",
+        "subtitle": "第一站母嬰購物，周邊連鎖餐廳選擇多"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 15 分鐘"
+        }
+      },
+      {
+        "time": "15:30",
+        "title": "Neo Park (名護自然動植物公園)",
+        "subtitle": "蒸汽小火車、近距離接觸動物"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車南下",
+          "time": "約 35 分鐘"
+        }
+      },
+      {
+        "time": "18:00",
+        "title": "入住 Kokoni Chill House (恩納村)",
+        "subtitle": "恩納村大本營海景別墅"
+      },
+      {
+        "time": "晚餐",
+        "title": "濱之家 (浜の家)",
+        "subtitle": "恩納新鮮海鮮 · 必點奶油烤魚",
+        "isFood": true,
+        "booked": false,
+        "needsBooking": true
+      }
+    ]
+  },
+  {
+    "day": 4,
+    "date": "4月7日(二)",
+    "title": "放電與購物 · 避開停業點",
+    "intensity": "中等",
+    "events": [
+      {
+        "time": "10:00",
+        "title": "從 Kokoni 出發",
+        "subtitle": ""
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 40 分鐘"
+        }
+      },
+      {
+        "time": "11:00",
+        "title": "沖繩兒童王國 (沖縄こどもの国)",
+        "subtitle": "全沖繩小朋友最愛動物園及遊樂場"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 15 分鐘"
+        }
+      },
+      {
+        "time": "14:30",
+        "title": "Birthday 具志川店 / 山里店",
+        "subtitle": "第二站母嬰購物衝刺"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 20 分鐘"
+        }
+      },
+      {
+        "time": "16:30",
+        "title": "AEON MALL Rycom (來客夢)",
+        "subtitle": "全沖繩最強商場，晚餐於此自由解決",
+        "isFood": true
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車返別墅",
+          "time": "約 25 分鐘"
+        }
+      }
+    ]
+  },
+  {
+    "day": 5,
+    "date": "4月8日(三)",
+    "title": "海豚體驗日 (已預約)",
+    "intensity": "中等",
+    "events": [
+      {
+        "time": "10:00",
+        "title": "部瀨名海中公園 (趁今日營業)",
+        "subtitle": "玻璃底船、海中展望塔 (Villa 旁 5 分鐘)"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車北上",
+          "time": "約 45 分鐘"
+        }
+      },
+      {
+        "time": "14:00",
+        "title": "本部元氣村 海豚體驗 ★",
+        "subtitle": "已預約 8 人 · 請提早 30 分鐘到達報到",
+        "booked": true
+      },
+      {
+        "time": "16:00",
+        "title": "萬座毛 (万座毛)",
+        "subtitle": "回程路過欣賞夕陽"
+      },
+      {
+        "time": "晚餐",
+        "title": "美國村 (アメリカンビレッジ)",
+        "subtitle": "海邊氣氛晚餐及散步",
+        "isFood": true
+      }
+    ]
+  },
+  {
+    "day": 6,
+    "date": "4月9日(四)",
+    "title": "恩納悠閒遊 · 阿古豬盛宴",
+    "intensity": "輕鬆",
+    "events": [
+      {
+        "time": "早上",
+        "title": "Kokoni 悠閒慢活",
+        "subtitle": "附近海灘散步或 Villa 內嬉戲"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 15 分鐘"
+        }
+      },
+      {
+        "time": "11:30",
+        "title": "御菓子御殿 恩納店",
+        "subtitle": "買手信、影相，順便附近食 Lunch"
+      },
+      {
+        "time": "下午",
+        "title": "Birthday 港川店",
+        "subtitle": "補足購物清單，附近有好多特色 Cafe"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 10 分鐘"
+        }
+      },
+      {
+        "time": "晚餐",
+        "title": "阿古豬隱家 (あぐーの隠れ家) 萬座店",
+        "subtitle": "涮涮鍋盛宴 · 需預約",
+        "isFood": true,
+        "needsBooking": true
+      }
+    ]
+  },
+  {
+    "day": 7,
+    "date": "4月10日(五)",
+    "title": "南部歷史探險 · 最終掃貨",
+    "intensity": "中等",
+    "events": [
+      {
+        "transit": {
+          "mode": "car",
+          "label": "行駛高速公路南下",
+          "time": "約 1 小時 10 分鐘"
+        }
+      },
+      {
+        "time": "10:30",
+        "title": "玉泉洞 (文化王國)",
+        "subtitle": "鐘乳石洞、傳統舞蹈表演"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 40 分鐘"
+        }
+      },
+      {
+        "time": "14:00",
+        "title": "SAN-A Parco City (浦添)",
+        "subtitle": "Akachan Honpo (阿卡將) 掃貨，全沖繩最新商場"
+      },
+      {
+        "time": "晚餐",
+        "title": "燒肉本部牧場 國際通店",
+        "subtitle": "壓軸頂級本部牛燒肉",
+        "isFood": true,
+        "needsBooking": true
+      }
+    ]
+  },
+  {
+    "day": 8,
+    "date": "4月11日(六)",
+    "title": "Outlet 掃尾 · 返港",
+    "intensity": "輕鬆",
+    "events": [
+      {
+        "time": "10:30",
+        "title": "Kokoni 退房南下",
+        "subtitle": ""
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車",
+          "time": "約 1 小時"
+        }
+      },
+      {
+        "time": "11:30",
+        "title": "Ashibinaa Outlet 或 San-A Naha Main Place",
+        "subtitle": "補齊最後手信及免稅品"
+      },
+      {
+        "time": "下午",
+        "title": "那霸第一牧志公設市場",
+        "subtitle": "最後一餐海鮮大餐"
+      },
+      {
+        "transit": {
+          "mode": "car",
+          "label": "開車前往機場",
+          "time": "約 20 分鐘"
+        }
+      },
+      {
+        "time": "18:00",
+        "title": "機場還車 (Toyota)",
+        "subtitle": ""
+      },
+      {
+        "time": "20:25",
+        "title": "UO825 飛機返港",
+        "subtitle": "愉快歸家"
+      }
+    ]
+  }
+]

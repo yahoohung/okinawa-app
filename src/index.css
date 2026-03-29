@@ -13,17 +13,21 @@ html {
 
 :root {
   --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --bg-color: #f7f9fa;
-  --text-main: #1c2833;
-  --text-secondary: #566573;
-  --text-tertiary: #808b96;
-  --primary: #0096b4;
-  --primary-dark: #006f8a;
+  --bg-color: #f8fafc;
+  --text-main: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #94a3b8;
+  --primary: #0369a1;
+  /* Sophisticated Blue */
+  --primary-dark: #0f172a;
+  /* Deep Navy */
+  --accent-gold: #b45309;
+  /* Muted Gold/Amber */
   --card-bg: #ffffff;
-  --border-color: rgba(0, 0, 0, 0.08);
-  --glass-bg: rgba(247, 249, 250, 0.72);
-  --shadow-sm: 0 4px 24px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.08);
+  --border-color: rgba(15, 23, 42, 0.08);
+  --glass-bg: rgba(248, 250, 252, 0.8);
+  --shadow-sm: 0 4px 24px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 10px 40px rgba(15, 23, 42, 0.08);
   --radius-md: 18px;
   --radius-lg: 32px;
   --radius-xl: 48px;
@@ -277,6 +281,22 @@ body {
   background: linear-gradient(180deg, var(--bg-color) 60%, rgba(247, 249, 250, 0) 100%);
 }
 
+@media (min-width: 1024px) {
+  .day-header {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 24px;
+  }
+
+  .day-header .day-intensity {
+    margin-bottom: 0 !important;
+  }
+
+  .day-header .day-title-massive {
+    margin-bottom: 0 !important;
+  }
+}
+
 .day-badge {
   font-size: clamp(17px, 4vw, 21px);
   font-weight: 600;
@@ -345,10 +365,9 @@ body {
   font-size: clamp(32px, 10vw, 48px);
   font-weight: 600;
   letter-spacing: -0.03em;
-  color: var(--primary);
+  color: var(--primary-dark);
   line-height: 1.0;
   margin-bottom: 24px;
-  opacity: 0.15;
 }
 
 /* Photo Highlight */
@@ -447,8 +466,8 @@ body {
 }
 
 .event-node.food {
-  background: #ff9f0a;
-  box-shadow: 0 0 10px rgba(255, 159, 10, 0.5);
+  background: var(--accent-gold);
+  box-shadow: 0 0 10px rgba(180, 83, 9, 0.3);
 }
 
 .event-row {
@@ -536,17 +555,15 @@ body {
 }
 
 .transit-label.walk {
-  background: rgba(48, 209, 88, 0.15);
-  border: 1px solid rgba(48, 209, 88, 0.3);
-  color: #248A3D;
-  box-shadow: 0 4px 12px rgba(48, 209, 88, 0.05);
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  color: var(--text-secondary);
 }
 
 .transit-label.car {
-  background: rgba(0, 164, 180, 0.15);
-  border: 1px solid rgba(0, 164, 180, 0.3);
-  color: #006f8a;
-  box-shadow: 0 4px 12px rgba(0, 164, 180, 0.05);
+  background: rgba(3, 105, 161, 0.08);
+  border: 1px solid rgba(3, 105, 161, 0.15);
+  color: var(--primary);
 }
 
 /* Grid Layouts - 12 Column System */
@@ -743,7 +760,7 @@ body {
   right: -10px;
   font-size: 160px;
   font-weight: 800;
-  color: transparent;
+  color: rgba(255, 255, 255, 0.11);
   -webkit-text-stroke: 3px var(--primary);
   opacity: 0.4;
   pointer-events: none;
