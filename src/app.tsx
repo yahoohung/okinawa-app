@@ -6,7 +6,11 @@ import foodData from './data/food.json'
 
 // Dynamic Image Loading System
 // This automatically finds all images in the assets folder
-const imageModules = import.meta.glob('./assets/*.{png,jpg,jpeg,webp,avif,svg}', { eager: true, as: 'url' });
+const imageModules = import.meta.glob('./assets/*.{png,jpg,jpeg,webp,avif,svg}', { 
+  eager: true, 
+  query: '?url',
+  import: 'default' 
+});
 
 /**
  * Helper to get image URL by filename/key
@@ -38,9 +42,18 @@ const getImage = (name: string | undefined): string => {
   // 1. Try legacy mapper first
   const mappedName = legacyMapper[name] || name;
 
+  const resolveResult = (res: any) => {
+    if (!res) return null;
+    if (typeof res === 'string') return res;
+    if (typeof res === 'object') return res.default || res;
+    return String(res);
+  };
+
   // 2. Try exact match
-  if (imageModules[`./assets/${mappedName}`]) {
-    return imageModules[`./assets/${mappedName}`] as string;
+  const exactMatch = imageModules[`./assets/${mappedName}`];
+  if (exactMatch) {
+    const resolved = resolveResult(exactMatch);
+    if (resolved && typeof resolved === 'string') return resolved;
   }
 
   // 3. Try matching by filename without extension
@@ -51,7 +64,8 @@ const getImage = (name: string | undefined): string => {
   });
 
   if (matches.length > 0) {
-    return imageModules[matches[0]] as string;
+    const resolved = resolveResult(imageModules[matches[0]]);
+    if (resolved && typeof resolved === 'string') return resolved;
   }
 
   // 4. Fallback for specific hardcoded placeholders
