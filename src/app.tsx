@@ -93,36 +93,25 @@ export function App() {
     if (!food) return null;
     return (
       <div
-        class="reveal"
-        style={{
-          marginTop: '24px',
-          background: '#fff',
-          borderRadius: '24px',
-          border: food.needsBooking && !food.booked ? '2px solid rgba(255, 159, 10, 0.6)' : '1px solid rgba(0,0,0,0.06)',
-          overflow: 'hidden',
-          boxShadow: '0 12px 32px rgba(0,0,0,0.06)',
-          display: 'flex',
-          flexDirection: 'column',
-          transition: 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1)'
-        }}
+        class={`reveal food-card ${food.needsBooking && !food.booked ? 'needs-booking' : ''}`}
       >
-        <div style={{ height: '220px', width: '100%', position: 'relative', overflow: 'hidden' }}>
-          <img src={foodImages[food.id]} alt={food.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <div class="food-card-image-wrapper">
+          <img src={foodImages[food.id]} alt={food.name} />
         </div>
         
-        <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
-          <div style={{ color: food.needsBooking && !food.booked ? '#e68a00' : 'var(--text-secondary)', fontSize: '13px', fontWeight: 700, letterSpacing: '0.02em', marginBottom: '6px' }}>{food.type}</div>
-          <h3 style={{ marginBottom: '8px', lineHeight: 1.2, fontSize: 'clamp(20px, 4vw, 24px)', color: 'var(--text-main)', fontWeight: 800, letterSpacing: '-0.02em' }}>{food.name}</h3>
-          <p style={{ marginBottom: '24px', fontSize: '15px', color: 'var(--text-secondary)', lineHeight: 1.5 }}>{food.desc}</p>
+        <div class="food-card-content">
+          <div class="food-card-type">{food.type}</div>
+          <h3 class="food-card-title">{food.name}</h3>
+          <p class="food-card-desc">{food.desc}</p>
           
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '12px', marginTop: 'auto' }}>
-            <div style={{ fontSize: '12px', color: 'var(--text-main)', background: 'rgba(0,0,0,0.05)', padding: '6px 12px', borderRadius: '99px', fontWeight: 600 }}>
+          <div class="food-card-footer">
+            <div class="food-card-note">
               {food.note}
             </div>
             {food.booked ? (
-              <div style={{ color: '#fff', fontSize: '12px', fontWeight: 700, padding: '6px 16px', background: '#30d158', borderRadius: '99px', boxShadow: '0 4px 12px rgba(48,209,88,0.3)' }}>已預約</div>
+              <div class="food-card-badge booked">已預約</div>
             ) : food.needsBooking ? (
-              <div style={{ color: '#fff', fontSize: '12px', fontWeight: 700, padding: '6px 16px', background: '#ff9f0a', borderRadius: '99px', boxShadow: '0 4px 12px rgba(255,159,10,0.3)' }}>需提早預約</div>
+              <div class="food-card-badge needs-booking">需提早預約</div>
             ) : null}
           </div>
         </div>
