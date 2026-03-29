@@ -2,7 +2,7 @@ import { useEffect } from 'preact/hooks'
 import './index.css'
 
 // Hero & Feature Images
-import heroImg from './assets/hero.png'
+import heroImg from './assets/hero1.jpg'
 import aquaImg from './assets/1.jpg'
 import churaumiImg from './assets/20170925173451_41.jpg'
 import gyokusendoImg from './assets/2111847.jpg'
@@ -133,13 +133,12 @@ export function App() {
   return (
     <div class="app-wrapper">
       <nav class="global-nav">
-        <a href="#itinerary">絕美行程</a>
-        <a href="#food">美食評鑑</a>
-      </nav>
-
-      <div class="local-nav">
         <div class="local-nav-title">Okinawa 2026.</div>
-      </div>
+        <div class="nav-links">
+          <a href="#itinerary">絕美行程</a>
+          <a href="#food">美食評鑑</a>
+        </div>
+      </nav>
 
       <header class="hero">
         <img src={heroImg} alt="Okinawa Pristine Beach" class="hero-bg" />
