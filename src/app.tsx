@@ -80,14 +80,6 @@ function useReveal() {
 export function App() {
   useReveal();
 
-  const getRecommendedFoodsForDay = (day: number) => {
-    if (day === 2) return [foodData.find(f => f.id === 'onigiri')];
-    if (day === 4) return [foodData.find(f => f.id === 'sushi')];
-    if (day === 5) return [foodData.find(f => f.id === 'soba'), foodData.find(f => f.id === 'kajinhou')];
-    if (day === 7) return [foodData.find(f => f.id === 'fisher_dining')];
-    return [];
-  }
-
   const renderFoodCard = (food: any) => {
     if (!food) return null;
     return (
