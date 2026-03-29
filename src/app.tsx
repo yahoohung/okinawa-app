@@ -98,12 +98,12 @@ export function App() {
         <div class="food-card-image-wrapper">
           <img src={foodImages[food.id]} alt={food.name} />
         </div>
-        
+
         <div class="food-card-content">
           <div class="food-card-type">{food.type}</div>
           <h3 class="food-card-title">{food.name}</h3>
           <p class="food-card-desc">{food.desc}</p>
-          
+
           <div class="food-card-footer">
             <div class="food-card-note">
               {food.note}
@@ -121,41 +121,35 @@ export function App() {
 
   return (
     <div class="app-wrapper">
-      <nav class="global-nav">
-        <div class="local-nav-title">Okinawa 2026.</div>
-        <div class="nav-links">
-          <a href="#itinerary">絕美行程</a>
-          <a href="#food">美食評鑑</a>
-        </div>
-      </nav>
+      {/* Minimal immersive experience - no global navigation */}
 
       <header class="hero">
         <img src={heroImg} alt="Okinawa Pristine Beach" class="hero-bg" />
         <div class="hero-content">
           <h1 class="hero-headline">Okinawa 2026.</h1>
           <h2 class="hero-subheadline">每一刻，都精彩絕倫。</h2>
-          <div class="hero-cta">
-            <a href="#itinerary" class="btn btn-primary" style="text-decoration: none; font-size:17px; padding:12px 24px;">深入探究</a>
-          </div>
+
         </div>
       </header>
 
       <main>
-        {/* Overview Section */}
+        {/* Overview Intro Section */}
         <section id="overview" class="section reveal">
           <div class="text-center">
             <h2 class="section-title">極致的放鬆。<br />前所未見的享受。</h2>
-            <p class="section-body text-center" style="margin-bottom: var(--section-padding);">
+            <p class="section-body text-center" style="margin-bottom: 0;">
               我們將 8 天 7 夜的旅程，打磨至完美。從那霸街頭的繁華，到北部深海的靜謐。一切為全家人量身定做。這，就是極致的假期體驗。
             </p>
           </div>
+        </section>
 
-          <div class="grid" id="accommodations" style="margin-bottom: 80px;">
-            <div class="col-span-12">
-              <h3 class="section-title reveal" style="font-size: clamp(32px, 6vw, 48px); margin-bottom:48px;">三大頂級住宿。<br />全然沉浸。</h3>
-            </div>
-
-            {/* Tokyu Stay - The Urban Pearl */}
+        {/* Accommodations Section */}
+        <section id="accommodations" class="section reveal" style="padding: 120px 20px;">
+          <div class="text-center" style="margin-bottom: 80px;">
+            <h2 class="section-title" style="font-size: clamp(32px, 8vw, 64px);">三大頂級住宿。<br />全然沉浸。</h2>
+          </div>
+          <div class="grid" style="max-width: 1100px; width: 100%; margin: 0 auto;">
+            {/* Tokyu Stay */}
             <div class="accommodation-card reveal col-span-4" style="min-height: 500px;">
               <img src={tokyuImg} alt="Tokyu Stay Naha" class="card-bg" />
               <div class="large-number-bg">01</div>
@@ -172,7 +166,7 @@ export function App() {
               </div>
             </div>
 
-            {/* GLANZ - The Star */}
+            {/* GLANZ */}
             <div class="accommodation-card reveal col-span-8" style="min-height: 500px;">
               <img src={villaImg} alt="Reflexion Villas GLANZ" class="card-bg" />
               <div class="large-number-bg">02</div>
@@ -191,7 +185,7 @@ export function App() {
               </div>
             </div>
 
-            {/* Kokoni - The Home Foundation - REFINED SPLIT LAYOUT */}
+            {/* Kokoni */}
             <div class="accommodation-card accommodation-split reveal col-span-12">
               <div class="split-img-container">
                 <img src={kokoniImg} alt="Kokoni Chill House" class="split-img" />
@@ -212,30 +206,51 @@ export function App() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            {/* Vehicles - The Movement */}
-            <div class="accommodation-card accommodation-split reveal col-span-12" style="min-height: 320px !important;">
-              <div class="split-content" style="border-left: none; border-right: 1px solid var(--border-color);">
-                <h3 style="font-size: clamp(24px, 5vw, 36px); font-weight:700; color:var(--text-main); margin-bottom:16px;">雙車編制。動力全開。</h3>
-                <p style="font-size: 16px; color:var(--text-secondary); max-width:360px;">
-                  兩輛 Toyota Sienta Hybrid。為家人提供最寧靜、順滑的移動體驗。
+        {/* Vehicles Section - Full Page Immersion */}
+        <section id="vehicles" class="section reveal full-page-vehicle">
+          <div class="vehicle-container">
+            <div class="vehicle-content">
+              <div class="vehicle-header">
+                <h3 class="vehicle-title">雙車編制。<br />全方位守護。</h3>
+                <p class="vehicle-description">
+                  兩輛 Toyota Sienta Hybrid。結合極致寧靜與現代主動安全科技，為全家人提供最順滑、放心的移動體驗。
                 </p>
               </div>
-              <div class="split-img-container" style="overflow: visible;">
-                <div class="car-slide car-float">
-                  <img src={sientaImg} alt="Toyota Sienta Hybrid" class="split-img" style="object-position: center 30%;" />
+
+              <div class="vehicle-specs">
+                <div class="spec-item">
+                  <div class="spec-label">安全科技</div>
+                  <div class="spec-value">主動安全系統<br />全速域跟車</div>
                 </div>
+                <div class="spec-item">
+                  <div class="spec-label">舒適空間</div>
+                  <div class="spec-value">雙電動滑門<br />進出無礙</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="vehicle-visual">
+              <div class="car-wrapper car-float">
+                <img src={sientaImg} alt="Toyota Sienta Hybrid" class="car-hero-img" />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Timeline Itinerary Section */}
-        <section id="itinerary" class="timeline">
-          <h2 class="section-title reveal text-center" style="margin-bottom: var(--section-padding);">
-            8 天 7 夜。<br />每一天，都是最高傑作。
-          </h2>
+        {/* Itinerary Header Section */}
+        <section id="itinerary" class="section reveal">
+          <div class="text-center">
+            <h2 class="section-title" style="margin-bottom: 0;">
+              8 天 7 夜。<br />每一天，都是最高傑作。
+            </h2>
+          </div>
+        </section>
 
+        {/* Day-by-Day Itinerary Timeline */}
+        <div class="timeline">
           {itineraryData.map((day) => {
             const photoHighlights = getImagesForDay(day.day);
 
@@ -326,23 +341,8 @@ export function App() {
               </div>
             )
           })}
-        </section>
-        {/* Food Evaluation Section */}
-        <section id="food" class="section reveal" style={{ paddingTop: '0' }}>
-          <div class="text-center">
-            <h2 class="section-title">美食評鑑。<br />舌尖上的沖繩。</h2>
-            <p class="section-body text-center" style="margin-bottom: var(--section-padding);">
-              從頂級和牛到地道小食，我們精選了 10 家最值得收藏的餐廳。不只是味覺的享受，更是旅程中不可磨滅的記憶。
-            </p>
-          </div>
-          <div class="grid">
-            {foodData.map((food) => (
-              <div class="col-span-6" key={food.id}>
-                {renderFoodCard(food)}
-              </div>
-            ))}
-          </div>
-        </section>
+        </div>
+        {/* End of content */}
         {/* End of Timeline */}
       </main>
 
