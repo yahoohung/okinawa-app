@@ -3,16 +3,14 @@ import preact from '@preact/preset-vite'
 
 // Plugin to replace og:image with the correct hashed filename
 function updateOgImagePlugin() {
-  let viteConfig: any
   return {
     name: 'update-og-image',
-    configResolved(config: any) {
-      viteConfig = config
+    configResolved() {
     },
     async generateBundle(_options: any, bundle: any) {
       // Find the hashed hero1.jpg filename
       let heroImagePath = '/hero1.jpg'
-      for (const [fileName, fileInfo] of Object.entries(bundle)) {
+      for (const [fileName] of Object.entries(bundle)) {
         if (fileName.startsWith('hero1') && fileName.endsWith('.jpg')) {
           heroImagePath = `/${fileName}`
           break
