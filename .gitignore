@@ -18,7 +18,3 @@ okinawa-app/dist-ssr/
 *.suo
 *.sw?
 
-# Local env files
-.env
-.env.local
-*.local
