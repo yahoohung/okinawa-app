@@ -1,626 +1,626 @@
 [
-  {
-    "day": 1,
-    "date": "4月4日（六）",
-    "title": "那霸。序幕。",
-    "intensity": "輕巧",
-    "highlights": [
-      {
-        "img": "kokusai",
-        "caption": "國際通。沖繩靈魂的初次對話。"
-      }
-    ],
-    "events": [
-      {
-        "time": "19:30",
-        "title": "抵達那霸 (OKA)",
-        "notes": "預留 75 分鐘完成入境、行李提取及通關程序。"
-      },
-      {
-        "transit": {
-          "mode": "monorail",
-          "label": "🚝 單軌電車：前往壺川站",
-          "time": "20 分鐘"
-        }
-      },
-      {
-        "time": "21:00",
-        "title": "Tokyu Stay 沖繩那霸",
-        "googleMaps": "https://www.google.com/maps/search/Tokyu+Stay+Okinawa+Naha",
-        "notes": "入住辦理。酒店位置優越，適合首晚休整。"
-      },
-      {
-        "transit": {
-          "mode": "walk",
-          "label": "🚶 漫步至國際通",
-          "time": "8 分鐘"
-        }
-      },
-      {
-        "time": "21:45",
-        "title": "晚餐：琉球の牛",
-        "googleMaps": "https://www.google.com/maps/search/Ryukyu+no+Ushi+Naha",
-        "isFood": true,
-        "needsBooking": true,
-        "notes": "極致和牛體驗。建議預約晚間時段以配合入境進度。"
-      }
-    ]
-  },
-  {
-    "day": 2,
-    "date": "4月5日（日）",
-    "title": "啟程。深藍。",
-    "intensity": "平衡",
-    "highlights": [
-      {
-        "img": "1704272345-3311346893-g.jpg",
-        "caption": "達磨寺。靜謐中的祈願契機。"
-      }
-    ],
-    "events": [
-      {
-        "time": "09:00",
-        "title": "車輛提取",
-        "notes": "前往赤嶺站辦理租車手續，預留 60 分鐘處理文書及驗車。"
-      },
-      {
-        "time": "10:30",
-        "title": "酒店行李裝載",
-        "notes": "回程接應成員及行李，正式開啟自駕旅程。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 前往首里",
-          "time": "15 分鐘"
-        }
-      },
-      {
-        "time": "11:00",
-        "title": "達磨寺",
-        "mapcode": "33 161 798*52",
-        "googleMaps": "https://www.google.com/maps/search/%E9%81%94%E7%A3%A8%E5%AF%BA",
-        "notes": "西來院祈福。為健康與平安注入祝福。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 國道 58 號：往浦添",
-          "time": "25 分鐘"
-        }
-      },
-      {
-        "time": "12:15",
-        "title": "Birthday 港川店",
-        "mapcode": "33 312 052*71",
-        "googleMaps": "https://www.google.com/maps/search/Birthday+%E6%B8%AF%E5%B7%9D%E5%BA%97",
-        "notes": "高品質母嬰用品精選空間。"
-      },
-      {
-        "time": "13:30",
-        "title": "午餐：港川商圈",
-        "mapcode": "33 312 301*77",
-        "googleMaps": "https://www.google.com/maps/search/%E6%B8%AF%E5%B7%9D%E5%A4%96%E4%BA%BA%E4%BD%8F%E5%AE%85%E8%A1%97",
-        "isFood": true,
-        "notes": "於異國建築群中品嚐地道輕食。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 高速行駛：往名護",
-          "time": "60 分鐘"
-        }
-      },
-      {
-        "time": "15:30",
-        "title": "部瀨名海中公園",
-        "mapcode": "206 442 075*11",
-        "googleMaps": "https://www.google.com/maps/search/%E9%83%A8%E7%80%AC%E5%90%8D%E6%B5%B7%E4%B8%AD%E5%85%AC%E5%9C%92",
-        "notes": "潛入蔚藍，體驗全方位海中景觀。"
-      },
-      {
-        "time": "17:30",
-        "title": "Reflexion GLANZ",
-        "mapcode": "206 685 889*88",
-        "googleMaps": "https://www.google.com/maps/search/Reflexion+GLANZ",
-        "notes": "入住名護私人別墅。"
-      },
-      {
-        "time": "19:30",
-        "title": "晚餐：百年古家 大家",
-        "mapcode": "206 745 056*82",
-        "googleMaps": "https://www.google.com/maps/search/%E7%99%BE%E5%B9%B4%E5%8F%A4%E5%AE%B6+%E5%A4%A7%E5%AE%B6",
-        "isFood": true,
-        "needsBooking": true,
-        "notes": "於過百年古宅品嚐阿古豬極致美味。"
-      }
-    ]
-  },
-  {
-    "day": 3,
-    "date": "4月6日（一）",
-    "title": "海洋。壯闊。",
-    "intensity": "平衡",
-    "highlights": [
-      {
-        "img": "churaumi",
-        "caption": "美麗海水族館。震撼的海洋劇場。"
-      }
-    ],
-    "events": [
-      {
-        "time": "10:15",
-        "title": "名護出發",
-        "notes": "啟程前往本部半島。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往本部半島",
-          "time": "30 分鐘"
-        }
-      },
-      {
-        "time": "10:45",
-        "title": "美麗海水族館",
-        "mapcode": "553 075 797*77",
-        "googleMaps": "https://www.google.com/maps/search/%E7%BE%8E%E9%BA%97%E6%B5%B7%E6%B0%B4%E6%97%8F%E9%A4%A8",
-        "notes": "黑潮之海。體驗震撼的深海律動。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 返回名護市",
-          "time": "30 分鐘"
-        }
-      },
-      {
-        "time": "13:30",
-        "title": "Birthday 名護店 · 午餐",
-        "mapcode": "206 657 888*55",
-        "googleMaps": "https://www.google.com/maps/search/Birthday+%E5%90%8D%E8%AD%B7%E5%BA%97",
-        "isFood": true,
-        "notes": "兼具購物補給與餐飲功能。"
-      },
-      {
-        "time": "15:30",
-        "title": "Neo Park",
-        "mapcode": "206 689 725*44",
-        "googleMaps": "https://www.google.com/maps/search/Neo+Park+Okinawa",
-        "notes": "乘坐復古小火車穿梭於大自然之中。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 沿海岸線南下",
-          "time": "35 分鐘"
-        }
-      },
-      {
-        "time": "18:00",
-        "title": "Kokoni Chill House",
-        "mapcode": "206 381 247*74",
-        "googleMaps": "https://www.google.com/maps/search/Kokoni+Chill+House",
-        "notes": "辦理恩納別墅入住。"
-      },
-      {
-        "time": "19:15",
-        "title": "晚餐：濱之家",
-        "mapcode": "206 035 759*47",
-        "googleMaps": "https://www.google.com/maps/search/%E6%BF%B1%E4%B9%8B%E5%AE%B6",
-        "isFood": true,
-        "notes": "地道沖繩海鮮料理，質樸而鮮美。"
-      }
-    ]
-  },
-  {
-    "day": 4,
-    "date": "4月7日（二）",
-    "title": "動力。美學。",
-    "intensity": "充實",
-    "highlights": [
-      {
-        "img": "1n920224x8z4b2kjheeeb.jpg",
-        "caption": "沖繩兒童王國。感官與探索的空間。"
-      }
-    ],
-    "events": [
-      {
-        "time": "10:00",
-        "title": "恩納啟程",
-        "notes": "前往沖繩市中心區域。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 前往沖繩市",
-          "time": "45 分鐘"
-        }
-      },
-      {
-        "time": "10:45",
-        "title": "沖繩兒童王國",
-        "mapcode": "33 561 798*33",
-        "googleMaps": "https://www.google.com/maps/search/%E6%B2%96%E7%B9%A9%E5%85%92%E7%AB%A5%E7%8E%8B%E5%9C%8B",
-        "notes": "結合自然、動物與科學探索的理想之地。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往具志川",
-          "time": "20 分鐘"
-        }
-      },
-      {
-        "time": "13:30",
-        "title": "午餐：具志川商圈",
-        "mapcode": "33 656 316*11",
-        "googleMaps": "https://www.google.com/maps/search/%E5%85%B7%E5%BF%97%E5%B7%9D%E5%95%86%E5%9C%88",
-        "isFood": true,
-        "notes": "於商圈內享受輕鬆午間用餐。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 短途移動",
-          "time": "5 分鐘"
-        }
-      },
-      {
-        "time": "14:45",
-        "title": "Birthday & 西松屋",
-        "mapcode": "33 656 250*66",
-        "googleMaps": "https://www.google.com/maps/search/Birthday+%E5%85%B7%E5%BF%97%E5%B7%9D%E5%BA%97",
-        "notes": "深度採購，為物資進行全方位補充。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往來客夢",
-          "time": "20 分鐘"
-        }
-      },
-      {
-        "time": "16:45",
-        "title": "AEON MALL Rycom",
-        "mapcode": "33 530 406*45",
-        "googleMaps": "https://www.google.com/maps/search/AEON+MALL+Okinawa+Rycom",
-        "isFood": true,
-        "notes": "沖繩最大購物樞紐。晚餐於館內享用多元選擇。"
-      }
-    ]
-  },
-  {
-    "day": 5,
-    "date": "4月8日（三）",
-    "title": "跨海。互動。",
-    "intensity": "平衡",
-    "highlights": [
-      {
-        "img": "manzamo",
-        "caption": "萬座毛。斷崖與夕陽的交織。"
-      }
-    ],
-    "events": [
-      {
-        "time": "09:30",
-        "title": "恩納啟程",
-        "notes": "開啟跨海之旅。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 跨海往古宇利島",
-          "time": "1 小時 15 分鐘"
-        }
-      },
-      {
-        "time": "10:45",
-        "title": "古宇利大橋 · 心形岩",
-        "mapcode": "485 752 411*22",
-        "googleMaps": "https://www.google.com/maps/search/%E5%8F%A4%E5%AE%87%E5%88%A9%E5%B3%B6+%E5%BF%83%E5%BD%A2%E5%B2%A9",
-        "notes": "穿越蔚藍海平面，探索自然奇觀。"
-      },
-      {
-        "time": "12:00",
-        "title": "午餐：本部町海景餐廳",
-        "googleMaps": ".jpg",
-        "isFood": true,
-        "notes": "在海岸視角下享受味蕾饗宴。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往元氣村",
-          "time": "10 分鐘"
-        }
-      },
-      {
-        "time": "13:40",
-        "title": "本部元氣村",
-        "mapcode": "553 076 077*63",
-        "googleMaps": "https://www.google.com/maps/search/%E6%9C%AC%E9%83%A8%E5%85%83%E6%B0%A3%E6%9D%91",
-        "notes": "辦理海豚互動體驗手續。"
-      },
-      {
-        "time": "14:00",
-        "title": "海豚互動體驗",
-        "booked": true,
-        "notes": "近距離感受海洋生命的脈動。"
-      },
-      {
-        "transit": {
-          "mode": "walk",
-          "label": "🐬 裝備整理",
-          "time": "40 分鐘"
-        }
-      },
-      {
-        "time": "16:30",
-        "title": "萬座毛 · 觀夕",
-        "mapcode": "206 312 039*17",
-        "googleMaps": "https://www.google.com/maps/search/%E8%90%AC%E5%BA%A7%E6%AF%9B",
-        "notes": "斷崖邊的日落視覺盛宴。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往美國村",
-          "time": "50 分鐘"
-        }
-      },
-      {
-        "time": "18:45",
-        "title": "晚餐：美國村",
-        "mapcode": "33 526 450*63",
-        "googleMaps": "https://www.google.com/maps/search/%E7%BE%8E%E5%9C%8B%E6%9D%91",
-        "isFood": true,
-        "notes": "於異國情調中享受晚宴氛圍。"
-      }
-    ]
-  },
-  {
-    "day": 6,
-    "date": "4月9日（四）",
-    "title": "慢活。秘境。",
-    "intensity": "輕巧",
-    "highlights": [
-      {
-        "img": "maxresdefault.jpg",
-        "caption": "Bios no Oka。森林與蘭花的呼吸。"
-      }
-    ],
-    "events": [
-      {
-        "time": "10:30",
-        "title": "恩納啟程",
-        "notes": "以從容步調探索自然秘境。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往恩納之驛",
-          "time": "15 分鐘"
-        }
-      },
-      {
-        "time": "11:15",
-        "title": "午餐：恩納之驛",
-        "mapcode": "206 035 767*28",
-        "googleMaps": "https://www.google.com/maps/search/%E6%81%A9%E7%B4%8D%E4%B9%8B%E9%A7%85",
-        "isFood": true,
-        "notes": "品嚐沖繩特色路邊小食與鮮味特產。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往 Bios no Oka",
-          "time": "20 分鐘"
-        }
-      },
-      {
-        "time": "13:30",
-        "title": "Bios no Oka",
-        "mapcode": "206 005 351*33",
-        "googleMaps": "https://www.google.com/maps/search/Bios+no+Oka",
-        "notes": "乘坐觀光船，感受靜謐的水上森林脈動。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往殘波岬",
-          "time": "30 分鐘"
-        }
-      },
-      {
-        "time": "16:30",
-        "title": "殘波岬公園",
-        "mapcode": "1005 685 380*00",
-        "googleMaps": "https://www.google.com/maps/search/%E6%AE%9B%E6%B3%A2%E5%B2%AC%E5%85%AC%E5%9C%92",
-        "notes": "經典白色燈塔與壯麗海岬景觀。"
-      },
-      {
-        "time": "18:45",
-        "title": "阿古豬隱家 · 極致豚肉",
-        "mapcode": "206 313 416*82",
-        "googleMaps": "https://www.google.com/maps/search/%E9%98%BF%E5%8F%A4%E8%B1%AC%E9%9A%B1%E5%AE%B6",
-        "isFood": true,
-        "needsBooking": true,
-        "notes": "低調隱密的頂級豚肉體驗。"
-      }
-    ]
-  },
-  {
-    "day": 7,
-    "date": "4月10日（五）",
-    "title": "文化。都心。",
-    "intensity": "充實",
-    "highlights": [
-      {
-        "img": "01.webp",
-        "caption": "波上宮。懸崖上的純淨信仰。"
-      }
-    ],
-    "events": [
-      {
-        "time": "09:15",
-        "title": "南部啟程",
-        "notes": "重返文化重地。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往南部玉泉洞",
-          "time": "1 小時 20 分鐘"
-        }
-      },
-      {
-        "time": "10:45",
-        "title": "玉泉洞 · 太鼓公演",
-        "mapcode": "232 495 330*28",
-        "googleMaps": "https://www.google.com/maps/search/%E7%8E%89%E6%B3%89%E6%B4%9E",
-        "notes": "地底探險與欣賞震撼太鼓表演。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往那霸市區",
-          "time": "40 分鐘"
-        }
-      },
-      {
-        "time": "13:15",
-        "title": "波上宮",
-        "mapcode": "33 185 022*00",
-        "googleMaps": "https://www.google.com/maps/search/%E6%B3%A2%E4%B8%8A%E5%AE%AE",
-        "notes": "於懸崖之上拍攝極具代表性的建築影像。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往新都心",
-          "time": "15 分鐘"
-        }
-      },
-      {
-        "time": "14:15",
-        "title": "午餐：新都心 漫遊",
-        "mapcode": "33 188 293*63",
-        "googleMaps": "https://www.google.com/maps/search/%E6%96%B0%E9%83%BD%E5%BF%83+San-A+Naha+Main+Place",
-        "isFood": true,
-        "notes": "於核心地段隨心享用午膳。"
-      },
-      {
-        "time": "15:45",
-        "title": "DFS & San-A Main Place",
-        "mapcode": "33 188 559*33",
-        "googleMaps": "https://www.google.com/maps/search/DFS+T+Galleria+Okinawa",
-        "notes": "精品與流行商品的購物巔峰。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往浦添",
-          "time": "20 分鐘"
-        }
-      },
-      {
-        "time": "18:00",
-        "title": "Parco City · 購物終點",
-        "mapcode": "33 341 454*11",
-        "googleMaps": "https://www.google.com/maps/search/San-A+Urasoe+West+Coast+PARCO+CITY",
-        "notes": "臨海而建的全方位購物空間。"
-      },
-      {
-        "time": "20:00",
-        "title": "燒肉王 · 豐盛晚餐",
-        "mapcode": "33 188 775*58",
-        "googleMaps": "https://www.google.com/maps/search/%E7%87%92%E8%82%89%E7%8E%8B+%E6%96%B0%E9%83%BD%E5%BF%83%E5%BA%97",
-        "isFood": true,
-        "needsBooking": true,
-        "notes": "人氣極高的燒肉盛宴，為旅程寫下終章。"
-      }
-    ]
-  },
-  {
-    "day": 8,
-    "date": "4月11日（六）",
-    "title": "終章。歸航。",
-    "intensity": "平衡",
-    "highlights": [
-      {
-        "img": "20241230-235838-53854915-w1920.webp",
-        "caption": "瀨長島。純白階梯與飛行美學。"
-      }
-    ],
-    "events": [
-      {
-        "time": "10:15",
-        "title": "退房與南下",
-        "notes": "離開恩納別墅，前往南部區域。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往瀨長島",
-          "time": "1 小時"
-        }
-      },
-      {
-        "time": "11:15",
-        "title": "瀨長島 Umikaji Terrace",
-        "mapcode": "33 002 602*06",
-        "googleMaps": "https://www.google.com/maps/search/%E7%80%AC%E9%95%B7%E5%B3%B6+Umikaji+Terrace",
-        "notes": "於純白希臘風建築中漫步，近距離觀賞飛機起降。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往豐崎區域",
-          "time": "15 分鐘"
-        }
-      },
-      {
-        "time": "13:00",
-        "title": "iias 豐崎 & DMM 水族館",
-        "mapcode": "232 543 400*25",
-        "googleMaps": "https://www.google.com/maps/search/iias+Okinawa+Toyosaki",
-        "isFood": true,
-        "notes": "融合數位科技的海洋探索。午餐於商圈內享用。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 短途接駁",
-          "time": "10 分鐘"
-        }
-      },
-      {
-        "time": "15:30",
-        "title": "Ashibinaa Outlet",
-        "mapcode": "232 544 452*22",
-        "googleMaps": "https://www.google.com/maps/search/Okinawa+Outlet+Mall+Ashibinaa",
-        "notes": "離境前的精品最後採買。"
-      },
-      {
-        "transit": {
-          "mode": "car",
-          "label": "🚗 往赤嶺還車",
-          "time": "20 分鐘"
-        }
-      },
-      {
-        "time": "17:30",
-        "title": "還車手續辦理",
-        "mapcode": "33 095 561*33",
-        "googleMaps": "https://www.google.com/maps/search/Toyota+Rent+A+Car+Akamine",
-        "notes": "於 Toyota 赤嶺店完成歸還手續。預留 30 分鐘。"
-      },
-      {
-        "time": "20:25",
-        "title": "返港 (UO825)",
-        "notes": "建議 18:30 前抵達機場櫃位辦理登機。"
-      }
-    ]
-  }
+    {
+        "day": 1,
+        "date": "4月4日（六）",
+        "title": "那霸。序幕。",
+        "intensity": "輕巧",
+        "highlights": [
+            {
+                "img": "kokusai",
+                "caption": "國際通。沖繩靈魂的初次對話。"
+            }
+        ],
+        "events": [
+            {
+                "time": "19:30",
+                "title": "抵達那霸 (OKA)",
+                "notes": "預留 75 分鐘完成入境、行李提取及通關程序。"
+            },
+            {
+                "transit": {
+                    "mode": "monorail",
+                    "label": "🚝 單軌電車：前往壺川站",
+                    "time": "20 分鐘"
+                }
+            },
+            {
+                "time": "21:00",
+                "title": "Tokyu Stay 沖繩那霸",
+                "googleMaps": "https://www.google.com/maps/search/Tokyu+Stay+Okinawa+Naha",
+                "notes": "入住辦理。酒店位置優越，適合首晚休整。"
+            },
+            {
+                "transit": {
+                    "mode": "walk",
+                    "label": "🚶 漫步至國際通",
+                    "time": "8 分鐘"
+                }
+            },
+            {
+                "time": "21:45",
+                "title": "晚餐：琉球の牛",
+                "googleMaps": "https://www.google.com/maps/search/Ryukyu+no+Ushi+Naha",
+                "isFood": true,
+                "needsBooking": true,
+                "notes": "極致和牛體驗。建議預約晚間時段以配合入境進度。"
+            }
+        ]
+    },
+    {
+        "day": 2,
+        "date": "4月5日（日）",
+        "title": "啟程。深藍。",
+        "intensity": "平衡",
+        "highlights": [
+            {
+                "img": "1704272345-3311346893-g.jpg",
+                "caption": "達磨寺。靜謐中的祈願契機。"
+            }
+        ],
+        "events": [
+            {
+                "time": "09:00",
+                "title": "車輛提取",
+                "notes": "前往赤嶺站辦理租車手續，預留 60 分鐘處理文書及驗車。"
+            },
+            {
+                "time": "10:30",
+                "title": "酒店行李裝載",
+                "notes": "回程接應成員及行李，正式開啟自駕旅程。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 前往首里",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "11:00",
+                "title": "達磨寺",
+                "mapcode": "33 161 798*52",
+                "googleMaps": "https://www.google.com/maps/search/%E9%81%94%E7%A3%A8%E5%AF%BA",
+                "notes": "西來院祈福。為健康與平安注入祝福。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 國道 58 號：往浦添",
+                    "time": "25 分鐘"
+                }
+            },
+            {
+                "time": "12:15",
+                "title": "Birthday 港川店",
+                "mapcode": "33 312 052*71",
+                "googleMaps": "https://www.google.com/maps/search/Birthday+%E6%B8%AF%E5%B7%9D%E5%BA%97",
+                "notes": "高品質母嬰用品精選空間。"
+            },
+            {
+                "time": "13:30",
+                "title": "午餐：港川商圈",
+                "mapcode": "33 312 301*77",
+                "googleMaps": "https://www.google.com/maps/search/%E6%B8%AF%E5%B7%9D%E5%A4%96%E4%BA%BA%E4%BD%8F%E5%AE%85%E8%A1%97",
+                "isFood": true,
+                "notes": "於異國建築群中品嚐地道輕食。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 高速行駛：往名護",
+                    "time": "60 分鐘"
+                }
+            },
+            {
+                "time": "15:30",
+                "title": "部瀨名海中公園",
+                "mapcode": "206 442 075*11",
+                "googleMaps": "https://www.google.com/maps/search/%E9%83%A8%E7%80%AC%E5%90%8D%E6%B5%B7%E4%B8%AD%E5%85%AC%E5%9C%92",
+                "notes": "潛入蔚藍，體驗全方位海中景觀。"
+            },
+            {
+                "time": "17:30",
+                "title": "Reflexion Villas GLANZ",
+                "mapcode": "206 685 889*88",
+                "googleMaps": "https://www.google.com/maps/search/Reflexion+GLANZ",
+                "notes": "入住名護私人別墅。"
+            },
+            {
+                "time": "19:30",
+                "title": "晚餐：百年古家 大家",
+                "mapcode": "206 745 056*82",
+                "googleMaps": "https://www.google.com/maps/search/%E7%99%BE%E5%B9%B4%E5%8F%A4%E5%AE%B6+%E5%A4%A7%E5%AE%B6",
+                "isFood": true,
+                "needsBooking": true,
+                "notes": "於過百年古宅品嚐阿古豬極致美味。"
+            }
+        ]
+    },
+    {
+        "day": 3,
+        "date": "4月6日（一）",
+        "title": "海洋。壯闊。",
+        "intensity": "平衡",
+        "highlights": [
+            {
+                "img": "churaumi",
+                "caption": "美麗海水族館。震撼的海洋劇場。"
+            }
+        ],
+        "events": [
+            {
+                "time": "10:15",
+                "title": "名護出發",
+                "notes": "啟程前往本部半島。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往本部半島",
+                    "time": "30 分鐘"
+                }
+            },
+            {
+                "time": "10:45",
+                "title": "美麗海水族館",
+                "mapcode": "553 075 797*77",
+                "googleMaps": "https://www.google.com/maps/search/%E7%BE%8E%E9%BA%97%E6%B5%B7%E6%B0%B4%E6%97%8F%E9%A4%A8",
+                "notes": "黑潮之海。體驗震撼的深海律動。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 返回名護市",
+                    "time": "30 分鐘"
+                }
+            },
+            {
+                "time": "13:30",
+                "title": "Birthday 名護店 · 午餐",
+                "mapcode": "206 657 888*55",
+                "googleMaps": "https://www.google.com/maps/search/Birthday+%E5%90%8D%E8%AD%B7%E5%BA%97",
+                "isFood": true,
+                "notes": "兼具購物補給與餐飲功能。"
+            },
+            {
+                "time": "15:30",
+                "title": "Neo Park",
+                "mapcode": "206 689 725*44",
+                "googleMaps": "https://www.google.com/maps/search/Neo+Park+Okinawa",
+                "notes": "乘坐復古小火車穿梭於大自然之中。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 沿海岸線南下",
+                    "time": "35 分鐘"
+                }
+            },
+            {
+                "time": "18:00",
+                "title": "Kokoni Chill House",
+                "mapcode": "206 381 247*74",
+                "googleMaps": "https://www.google.com/maps/search/Kokoni+Chill+House",
+                "notes": "辦理恩納別墅入住。"
+            },
+            {
+                "time": "19:15",
+                "title": "晚餐：濱之家",
+                "mapcode": "206 035 759*47",
+                "googleMaps": "https://www.google.com/maps/search/%E6%BF%B1%E4%B9%8B%E5%AE%B6",
+                "isFood": true,
+                "notes": "地道沖繩海鮮料理，質樸而鮮美。"
+            }
+        ]
+    },
+    {
+        "day": 4,
+        "date": "4月7日（二）",
+        "title": "動力。美學。",
+        "intensity": "充實",
+        "highlights": [
+            {
+                "img": "1n920224x8z4b2kjheeeb.jpg",
+                "caption": "沖繩兒童王國。感官與探索的空間。"
+            }
+        ],
+        "events": [
+            {
+                "time": "10:00",
+                "title": "恩納啟程",
+                "notes": "前往沖繩市中心區域。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 前往沖繩市",
+                    "time": "45 分鐘"
+                }
+            },
+            {
+                "time": "10:45",
+                "title": "沖繩兒童王國",
+                "mapcode": "33 561 798*33",
+                "googleMaps": "https://www.google.com/maps/search/%E6%B2%96%E7%B9%A9%E5%85%92%E7%AB%A5%E7%8E%8B%E5%9C%8B",
+                "notes": "結合自然、動物與科學探索的理想之地。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往具志川",
+                    "time": "20 分鐘"
+                }
+            },
+            {
+                "time": "13:30",
+                "title": "午餐：具志川商圈",
+                "mapcode": "33 656 316*11",
+                "googleMaps": "https://www.google.com/maps/search/%E5%85%B7%E5%BF%97%E5%B7%9D%E5%95%86%E5%9C%88",
+                "isFood": true,
+                "notes": "於商圈內享受輕鬆午間用餐。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 短途移動",
+                    "time": "5 分鐘"
+                }
+            },
+            {
+                "time": "14:45",
+                "title": "Birthday & 西松屋",
+                "mapcode": "33 656 250*66",
+                "googleMaps": "https://www.google.com/maps/search/Birthday+%E5%85%B7%E5%BF%97%E5%B7%9D%E5%BA%97",
+                "notes": "深度採購，為物資進行全方位補充。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往來客夢",
+                    "time": "20 分鐘"
+                }
+            },
+            {
+                "time": "16:45",
+                "title": "AEON MALL Rycom",
+                "mapcode": "33 530 406*45",
+                "googleMaps": "https://www.google.com/maps/search/AEON+MALL+Okinawa+Rycom",
+                "isFood": true,
+                "notes": "沖繩最大購物樞紐。晚餐於館內享用多元選擇。"
+            }
+        ]
+    },
+    {
+        "day": 5,
+        "date": "4月8日（三）",
+        "title": "跨海。互動。",
+        "intensity": "平衡",
+        "highlights": [
+            {
+                "img": "manzamo",
+                "caption": "萬座毛。斷崖與夕陽的交織。"
+            }
+        ],
+        "events": [
+            {
+                "time": "09:30",
+                "title": "恩納啟程",
+                "notes": "開啟跨海之旅。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 跨海往古宇利島",
+                    "time": "1 小時 15 分鐘"
+                }
+            },
+            {
+                "time": "10:45",
+                "title": "古宇利大橋 · 心形岩",
+                "mapcode": "485 752 411*22",
+                "googleMaps": "https://www.google.com/maps/search/%E5%8F%A4%E5%AE%87%E5%88%A9%E5%B3%B6+%E5%BF%83%E5%BD%A2%E5%B2%A9",
+                "notes": "穿越蔚藍海平面，探索自然奇觀。"
+            },
+            {
+                "time": "12:00",
+                "title": "午餐：本部町海景餐廳",
+                "googleMaps": ".jpg",
+                "isFood": true,
+                "notes": "在海岸視角下享受味蕾饗宴。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往元氣村",
+                    "time": "10 分鐘"
+                }
+            },
+            {
+                "time": "13:40",
+                "title": "本部元氣村",
+                "mapcode": "553 076 077*63",
+                "googleMaps": "https://www.google.com/maps/search/%E6%9C%AC%E9%83%A8%E5%85%83%E6%B0%A3%E6%9D%91",
+                "notes": "辦理海豚互動體驗手續。"
+            },
+            {
+                "time": "14:00",
+                "title": "海豚互動體驗",
+                "booked": true,
+                "notes": "近距離感受海洋生命的脈動。"
+            },
+            {
+                "transit": {
+                    "mode": "walk",
+                    "label": "🐬 裝備整理",
+                    "time": "40 分鐘"
+                }
+            },
+            {
+                "time": "16:30",
+                "title": "萬座毛 · 觀夕",
+                "mapcode": "206 312 039*17",
+                "googleMaps": "https://www.google.com/maps/search/%E8%90%AC%E5%BA%A7%E6%AF%9B",
+                "notes": "斷崖邊的日落視覺盛宴。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往美國村",
+                    "time": "50 分鐘"
+                }
+            },
+            {
+                "time": "18:45",
+                "title": "晚餐：美國村",
+                "mapcode": "33 526 450*63",
+                "googleMaps": "https://www.google.com/maps/search/%E7%BE%8E%E5%9C%8B%E6%9D%91",
+                "isFood": true,
+                "notes": "於異國情調中享受晚宴氛圍。"
+            }
+        ]
+    },
+    {
+        "day": 6,
+        "date": "4月9日（四）",
+        "title": "慢活。秘境。",
+        "intensity": "輕巧",
+        "highlights": [
+            {
+                "img": "maxresdefault.jpg",
+                "caption": "Bios no Oka。森林與蘭花的呼吸。"
+            }
+        ],
+        "events": [
+            {
+                "time": "10:30",
+                "title": "恩納啟程",
+                "notes": "以從容步調探索自然秘境。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往恩納之驛",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "11:15",
+                "title": "午餐：恩納之驛",
+                "mapcode": "206 035 767*28",
+                "googleMaps": "https://www.google.com/maps/search/%E6%81%A9%E7%B4%8D%E4%B9%8B%E9%A7%85",
+                "isFood": true,
+                "notes": "品嚐沖繩特色路邊小食與鮮味特產。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往 Bios no Oka",
+                    "time": "20 分鐘"
+                }
+            },
+            {
+                "time": "13:30",
+                "title": "Bios no Oka",
+                "mapcode": "206 005 351*33",
+                "googleMaps": "https://www.google.com/maps/search/Bios+no+Oka",
+                "notes": "乘坐觀光船，感受靜謐的水上森林脈動。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往殘波岬",
+                    "time": "30 分鐘"
+                }
+            },
+            {
+                "time": "16:30",
+                "title": "殘波岬公園",
+                "mapcode": "1005 685 380*00",
+                "googleMaps": "https://www.google.com/maps/search/%E6%AE%9B%E6%B3%A2%E5%B2%AC%E5%85%AC%E5%9C%92",
+                "notes": "經典白色燈塔與壯麗海岬景觀。"
+            },
+            {
+                "time": "18:45",
+                "title": "阿古豬隱家 · 極致豚肉",
+                "mapcode": "206 313 416*82",
+                "googleMaps": "https://www.google.com/maps/search/%E9%98%BF%E5%8F%A4%E8%B1%AC%E9%9A%B1%E5%AE%B6",
+                "isFood": true,
+                "needsBooking": true,
+                "notes": "低調隱密的頂級豚肉體驗。"
+            }
+        ]
+    },
+    {
+        "day": 7,
+        "date": "4月10日（五）",
+        "title": "文化。都心。",
+        "intensity": "充實",
+        "highlights": [
+            {
+                "img": "01.webp",
+                "caption": "波上宮。懸崖上的純淨信仰。"
+            }
+        ],
+        "events": [
+            {
+                "time": "09:15",
+                "title": "南部啟程",
+                "notes": "重返文化重地。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往南部玉泉洞",
+                    "time": "1 小時 20 分鐘"
+                }
+            },
+            {
+                "time": "10:45",
+                "title": "玉泉洞 · 太鼓公演",
+                "mapcode": "232 495 330*28",
+                "googleMaps": "https://www.google.com/maps/search/%E7%8E%89%E6%B3%89%E6%B4%9E",
+                "notes": "地底探險與欣賞震撼太鼓表演。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往那霸市區",
+                    "time": "40 分鐘"
+                }
+            },
+            {
+                "time": "13:15",
+                "title": "波上宮",
+                "mapcode": "33 185 022*00",
+                "googleMaps": "https://www.google.com/maps/search/%E6%B3%A2%E4%B8%8A%E5%AE%AE",
+                "notes": "於懸崖之上拍攝極具代表性的建築影像。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往新都心",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "14:15",
+                "title": "午餐：新都心 漫遊",
+                "mapcode": "33 188 293*63",
+                "googleMaps": "https://www.google.com/maps/search/%E6%96%B0%E9%83%BD%E5%BF%83+San-A+Naha+Main+Place",
+                "isFood": true,
+                "notes": "於核心地段隨心享用午膳。"
+            },
+            {
+                "time": "15:45",
+                "title": "DFS & San-A Main Place",
+                "mapcode": "33 188 559*33",
+                "googleMaps": "https://www.google.com/maps/search/DFS+T+Galleria+Okinawa",
+                "notes": "精品與流行商品的購物巔峰。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往浦添",
+                    "time": "20 分鐘"
+                }
+            },
+            {
+                "time": "18:00",
+                "title": "Parco City · 購物終點",
+                "mapcode": "33 341 454*11",
+                "googleMaps": "https://www.google.com/maps/search/San-A+Urasoe+West+Coast+PARCO+CITY",
+                "notes": "臨海而建的全方位購物空間。"
+            },
+            {
+                "time": "20:00",
+                "title": "燒肉王 · 豐盛晚餐",
+                "mapcode": "33 188 775*58",
+                "googleMaps": "https://www.google.com/maps/search/%E7%87%92%E8%82%89%E7%8E%8B+%E6%96%B0%E9%83%BD%E5%BF%83%E5%BA%97",
+                "isFood": true,
+                "needsBooking": true,
+                "notes": "人氣極高的燒肉盛宴，為旅程寫下終章。"
+            }
+        ]
+    },
+    {
+        "day": 8,
+        "date": "4月11日（六）",
+        "title": "終章。歸航。",
+        "intensity": "平衡",
+        "highlights": [
+            {
+                "img": "20241230-235838-53854915-w1920.webp",
+                "caption": "瀨長島。純白階梯與飛行美學。"
+            }
+        ],
+        "events": [
+            {
+                "time": "10:15",
+                "title": "退房與南下",
+                "notes": "離開恩納別墅，前往南部區域。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往瀨長島",
+                    "time": "1 小時"
+                }
+            },
+            {
+                "time": "11:15",
+                "title": "瀨長島 Umikaji Terrace",
+                "mapcode": "33 002 602*06",
+                "googleMaps": "https://www.google.com/maps/search/%E7%80%AC%E9%95%B7%E5%B3%B6+Umikaji+Terrace",
+                "notes": "於純白希臘風建築中漫步，近距離觀賞飛機起降。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往豐崎區域",
+                    "time": "15 分鐘"
+                }
+            },
+            {
+                "time": "13:00",
+                "title": "iias 豐崎 & DMM 水族館",
+                "mapcode": "232 543 400*25",
+                "googleMaps": "https://www.google.com/maps/search/iias+Okinawa+Toyosaki",
+                "isFood": true,
+                "notes": "融合數位科技的海洋探索。午餐於商圈內享用。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 短途接駁",
+                    "time": "10 分鐘"
+                }
+            },
+            {
+                "time": "15:30",
+                "title": "Ashibinaa Outlet",
+                "mapcode": "232 544 452*22",
+                "googleMaps": "https://www.google.com/maps/search/Okinawa+Outlet+Mall+Ashibinaa",
+                "notes": "離境前的精品最後採買。"
+            },
+            {
+                "transit": {
+                    "mode": "car",
+                    "label": "🚗 往赤嶺還車",
+                    "time": "20 分鐘"
+                }
+            },
+            {
+                "time": "17:30",
+                "title": "還車手續辦理",
+                "mapcode": "33 095 561*33",
+                "googleMaps": "https://www.google.com/maps/search/Toyota+Rent+A+Car+Akamine",
+                "notes": "於 Toyota 赤嶺店完成歸還手續。預留 30 分鐘。"
+            },
+            {
+                "time": "20:25",
+                "title": "返港 (UO825)",
+                "notes": "建議 18:30 前抵達機場櫃位辦理登機。"
+            }
+        ]
+    }
 ]
