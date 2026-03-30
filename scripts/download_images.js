@@ -71,7 +71,7 @@ async function processFile(filePath) {
       }
     } else if (obj !== null && typeof obj === 'object') {
       for (const key in obj) {
-        if (typeof obj[key] === 'string' && obj[key].startsWith('http')) {
+        if (typeof obj[key] === 'string' && obj[key].startsWith('http') && !obj[key].includes('google.com/maps')) {
           const url = obj[key];
           const ext = getExtension(url);
           // Try to generate a useful filename

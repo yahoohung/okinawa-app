@@ -13,29 +13,26 @@ html {
 
 :root {
   --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --bg-color: #f8fafc;
-  --text-main: #0f172a;
-  --text-secondary: #475569;
-  --text-tertiary: #94a3b8;
-  --primary: #0369a1;
-  /* Sophisticated Blue */
-  --primary-dark: #0f172a;
-  /* Deep Navy */
+  --bg-color: #f7f9fa;
+  --text-main: #1d1d1f; /* Apple primary text */
+  --text-secondary: #86868b; /* Apple secondary text */
+  --text-tertiary: #a1a1a6;
+  --primary: #0071e3; /* Apple Blue */
+  --primary-dark: #000000;
   --accent-gold: #b45309;
-  /* Muted Gold/Amber */
-  --card-bg: #ffffff;
-  --border-color: rgba(15, 23, 42, 0.08);
-  --glass-bg: rgba(248, 250, 252, 0.8);
-  --shadow-sm: 0 4px 24px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 10px 40px rgba(15, 23, 42, 0.08);
-  --radius-md: 18px;
-  --radius-lg: 32px;
-  --radius-xl: 48px;
-  --blur-amount: blur(40px);
-  --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  --section-padding: clamp(100px, 20vh, 240px);
-  --card-padding: clamp(24px, 5vw, 48px);
-  --accent-gradient: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --border-color: rgba(0, 0, 0, 0.05);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-xl: 40px;
+  --blur-amount: blur(20px);
+  --transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  --section-padding: clamp(80px, 15vh, 160px);
+  --card-padding: clamp(20px, 4vw, 32px);
+  --accent-gradient: linear-gradient(135deg, var(--primary) 0%, #00d4ff 100%);
 }
 
 * {
@@ -305,11 +302,11 @@ body {
 }
 
 .day-intensity {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  font-size: clamp(40px, 10vw, 80px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--primary);
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -432,16 +429,13 @@ body {
   /* More breathing room */
 }
 
-/* Vertical Spine */
 .day-spine {
   position: absolute;
   top: 160px;
-  /* Start below Day Title */
   bottom: 0;
   left: 20px;
-  width: 2px;
-  background: linear-gradient(180deg, var(--primary) 0%, rgba(0, 0, 0, 0.05) 100%);
-  border-radius: 2px;
+  width: 1px;
+  background: linear-gradient(180deg, var(--primary) 0%, rgba(0, 0, 0, 0.03) 100%);
   z-index: 1;
 }
 
@@ -451,23 +445,20 @@ body {
   }
 }
 
-/* Event Connector Node */
 .event-node {
   position: absolute;
-  left: -2px;
-  /* Center on spine */
+  left: -4px;
   top: 8px;
-  width: 6px;
-  height: 6px;
-  background: var(--primary);
+  width: 9px;
+  height: 9px;
+  background: var(--bg-color);
+  border: 1.5px solid var(--primary);
   border-radius: 50%;
   z-index: 5;
-  box-shadow: 0 0 10px rgba(0, 150, 180, 0.4);
 }
 
 .event-node.food {
-  background: var(--accent-gold);
-  box-shadow: 0 0 10px rgba(180, 83, 9, 0.3);
+  border-color: var(--accent-gold);
 }
 
 .event-row {
@@ -544,14 +535,14 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(0, 0, 0, 0.03);
-  padding: 8px 16px;
+  background: var(--glass-bg);
+  padding: 6px 16px;
   border-radius: 99px;
-  /* Pill shape for transit */
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
   font-weight: 600;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  font-size: 13px;
+  backdrop-filter: var(--blur-amount);
+  -webkit-backdrop-filter: var(--blur-amount);
 }
 
 .transit-label.walk {
@@ -798,12 +789,147 @@ body {
 }
 
 .day-title-text {
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: 600;
+  margin-bottom: 48px;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
   padding-left: 48px;
 }
 
 @media (min-width: 768px) {
   .day-title-text {
     padding-left: 80px;
+  }
+}
+
+/* Event Notes & Mapcode Aesthetic */
+.event-notes {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-main);
+  background: rgba(0, 0, 0, 0.03);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  margin-top: 16px;
+  border-left: 1.5px solid var(--primary);
+  font-weight: 400;
+}
+
+.event-actions-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.google-maps-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur-amount);
+  -webkit-backdrop-filter: var(--blur-amount);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0 24px;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  min-height: 64px;
+}
+
+.google-maps-btn:hover {
+  background: #ffffff;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-md);
+}
+
+.google-maps-btn .btn-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-icon {
+  font-size: 22px;
+}
+
+.btn-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.mapcode-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur-amount);
+  -webkit-backdrop-filter: var(--blur-amount);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  min-width: 170px;
+}
+
+.mapcode-card:hover {
+  background: #ffffff;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-md);
+}
+
+.mapcode-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mapcode-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.mapcode-icon {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.mapcode-value {
+  font-family: "SF Mono", "Fira Code", monospace;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-main);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .event-actions-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mapcode-card, .google-maps-btn {
+    width: 100%;
+    min-width: 0;
+  }
+  
+  .mapcode-card {
+    padding: 20px;
+  }
+  
+  .mapcode-value {
+    font-size: 22px; /* Extra large for driver readability on phone mount */
+    text-align: center;
   }
 }
 
@@ -817,14 +943,14 @@ body {
 /* Food Card System - 2026 Coastal Resort Aesthetic */
 .food-card {
   margin-top: 24px;
-  background: #fff;
-  border-radius: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
   overflow: hidden;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: var(--transition);
 }
 
 .food-card:hover {

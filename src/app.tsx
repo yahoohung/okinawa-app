@@ -228,7 +228,7 @@ export function App() {
             return (
               <div class="timeline-item" key={day.day}>
                 <div class="day-header reveal">
-                  <div class="day-intensity" style="font-size: clamp(40px, 10vw, 80px); font-weight: 800; line-height: 1; letter-spacing: -0.04em; color: var(--primary);">
+                  <div class="day-intensity">
                     DAY {day.day}.
                   </div>
                   <div class="day-title-massive">{day.date}</div>
@@ -237,7 +237,7 @@ export function App() {
                 <div class="day-spine"></div>
 
                 <div style="position:relative; z-index:2;">
-                  <h3 class="reveal day-title-text" style="font-size: clamp(24px, 5vw, 32px); font-weight:600; margin-bottom: 48px; color:var(--text-main);">{day.title}。</h3>
+                  <h3 class="reveal day-title-text">{day.title}。</h3>
 
                   {day.highlights?.map((photo: any, i: number) => (
                     <div class={`photo-highlight reveal reveal-delay-${(i % 2) + 1}`} key={i} style={{ marginBottom: '64px', marginLeft: '0px' }}>
@@ -265,12 +265,40 @@ export function App() {
                             <div class={`event-node ${evt.isFood ? 'food' : ''}`}></div>
                             <div class="event-time">{evt.time}</div>
                             <div class="event-details" style={{ flex: 1 }}>
-                              <div class="event-title" style={evt.isFood ? { color: 'var(--accent-gold)' } : {}}>
+                              <div class="event-title">
                                 {evt.title}
                                 {evt.booked && <span class="timeline-badge booked-badge">已預約</span>}
                                 {evt.needsBooking && !evt.booked && <span class="timeline-badge needs-booking-badge">需提早預約</span>}
                               </div>
                               {evt.subtitle && <div class="event-subtitle">{evt.subtitle}</div>}
+                              {evt.notes && <div class="event-notes">{evt.notes}</div>}
+                              {(evt.mapcode || evt.googleMaps) && (
+                                <div class="event-actions-wrapper">
+                                  {evt.googleMaps && (
+                                    <a 
+                                      href={evt.googleMaps} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer" 
+                                      class="google-maps-btn"
+                                      title="在 Google Maps 中開啟"
+                                    >
+                                      <div class="btn-content">
+                                        <span class="btn-icon">🗺️</span>
+                                        <span class="btn-text">Google Maps</span>
+                                      </div>
+                                    </a>
+                                  )}
+                                  {evt.mapcode && (
+                                    <div class="mapcode-card">
+                                      <div class="mapcode-header">
+                                        <span class="mapcode-label">MAPCODE</span>
+                                        <span class="mapcode-icon">📍</span>
+                                      </div>
+                                      <div class="mapcode-value">{evt.mapcode}</div>
+                                    </div>
+                                  )}
+                                </div>
+                              )}
                             </div>
                           </div>
                           {evt.isFood && (() => {
